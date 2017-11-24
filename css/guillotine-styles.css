@@ -1,0 +1,112 @@
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+
+}
+
+
+li.story{
+	color:#0c0c0c ;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+}
+
+li.services{
+	color:#0c0c0c ;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+	
+}
+
+li.contact{
+	color:#0c0c0c ;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+
+	}
+	
+
+#head_logo{
+	color:#de1717;
+	background-color:#e5e5e5;
+	font-family: sans-serif;
+	font-size: 400%;
+	position:
+	margin:30px;
+}
+
+#head_nav{
+	background-color:#e5e5e5 ;
+}
+
+
+
+li.about_us{
+	color:#e5e5e5;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+}
+
+li.services2{
+	color:#e5e5e5;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+}
+
+
+li.contact2{
+	color:#e5e5e5 ;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+}
+
+li.gallery{
+	color:#e5e5e5 ;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+}
+
+li.jobs{
+	color:#e5e5e5 ;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:30px;
+	font-weight: bold;
+
+}
+.head2{
+	color:#e5e5e5;
+	font-family: sans-serif;
+	display:inline-block;
+	margin:15px;
+	font-weight: bold;
+	
+}
+#nav_2{
+	color:#e5e5e5;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: #0c0c0c;
+	border-bottom:1px;
+
+}
+
+#nav_3{
+	background-color: #0c0c0c;
+
+
+
+}
