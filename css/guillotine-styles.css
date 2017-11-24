@@ -1,0 +1,31 @@
+body {
+	background-color: rgb(229,229,229);
+}
+a.navbar-brand-override{
+	color:rgb(222,23,23); 
+	font-size: 3em;
+}
+
+.navbar-default{
+	background-color: rgb(229,229,229);	
+}
+.navbar-right-override li > a{
+	color: black;
+	font-weight: bold;
+
+}
+
+@media (min-width: 768px){
+	nav.navbar{
+		margin-top: 4em;
+	}
+	a.navbar-brand-override{
+		font-size: 3em;
+		letter-spacing: 0.2em; 
+		margin-left: 1em;
+	}
+
+	ul.navbar-right-override{
+		margin-right: 3em;
+	}
+}
