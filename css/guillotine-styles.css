@@ -26,10 +26,7 @@ li.contact{
 	font-size: 400%;
 	position:
 	margin:30px;
-}
 
-#head_nav{
-	background-color:#e5e5e5 ;
 }
 
 
@@ -75,26 +72,70 @@ li.jobs{
 	font-weight: bold;
 
 }
-.head2{
-	color:#e5e5e5;
+.footer-logo{
+	color:#de1717;
 	font-family: sans-serif;
 	display:inline-block;
 	margin:15px;
 	font-weight: bold;
 	
+	
 }
-#nav_2{
+#sub_footer{
 	color:#e5e5e5;
 	font-family: sans-serif;
 	font-weight: bold;
 	background-color: #0c0c0c;
-	border-bottom:1px;
-
+	
 }
 
-#nav_3{
+#footerlink_logo{
 	background-color: #0c0c0c;
+}
+
+.footerlink li > a{
+	color:#e5e5e5;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: #0c0c0c;
+}
 
 
+/* Small devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+	.subfooter{
+		text-align: center;
+		background-color: #0c0c0c;
+	}
 
 }
+
+/* Medium devices (tablet, 768px and up) */
+@media (min-width: 768px) {
+	.subfooter{
+		color: #e5e5e5;
+	}
+}
+
+
+.column1{
+	float: right;
+    width: 50%;
+    padding: 300px;
+    height: 300px;
+
+}
+
+.column2{
+	float: left;
+    width: 50%;
+    padding: 300px;
+    height: 300px;
+
+}
+.subfooter{
+	text-align: center;
+	/*border-width: 0.1em;*/
+	border: 1px solid white;
+}
+
