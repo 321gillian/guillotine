@@ -1,24 +1,11 @@
 /* nav bar css */ 
 
-
-
-li.story{
+.main_nav{
 	color:#0c0c0c ;
 	font-weight: bold;
+
 }
 
-li.services{
-	color:#0c0c0c ;
-	font-weight: bold;
-	
-}
-
-li.contact{
-	color:#0c0c0c ;
-	font-weight: bold;
-
-	}
-	
 
 .navbar-brand-override{
 	color:#de1717;
@@ -29,54 +16,20 @@ li.contact{
 
 }
 
-
-
-li.about_us{
+.navbar-right{
 	color:#e5e5e5;
 	font-family: sans-serif;
 	display:inline-block;
-	margin:30px;
-	font-weight: bold;
-}
-
-li.services2{
-	color:#e5e5e5;
-	font-family: sans-serif;
-	display:inline-block;
-	margin:30px;
+	margin:9px;
 	font-weight: bold;
 }
 
 
-li.contact2{
-	color:#e5e5e5 ;
-	font-family: sans-serif;
-	display:inline-block;
-	margin:30px;
-	font-weight: bold;
-}
-
-li.gallery{
-	color:#e5e5e5 ;
-	font-family: sans-serif;
-	display:inline-block;
-	margin:30px;
-	font-weight: bold;
-}
-
-li.jobs{
-	color:#e5e5e5 ;
-	font-family: sans-serif;
-	display:inline-block;
-	margin:30px;
-	font-weight: bold;
-
-}
 .footer-logo{
 	color:#de1717;
 	font-family: sans-serif;
 	display:inline-block;
-	margin:15px;
+	margin:25px;
 	font-weight: bold;
 	
 	
@@ -110,6 +63,18 @@ li.jobs{
 
 }
 
+
+/* footerlink will disappear when reached max width */
+@media (max-width: 40em) {
+	#footerlink_logo{
+		text-align: center;
+		visibility:hidden;
+	}
+
+}
+
+
+
 /* Medium devices (tablet, 768px and up) */
 @media (min-width: 768px) {
 	.subfooter{
@@ -118,21 +83,6 @@ li.jobs{
 }
 
 
-.column1{
-	float: right;
-    width: 50%;
-    padding: 300px;
-    height: 300px;
-
-}
-
-.column2{
-	float: left;
-    width: 50%;
-    padding: 300px;
-    height: 300px;
-
-}
 .subfooter{
 	text-align: center;
 	/*border-width: 0.1em;*/
