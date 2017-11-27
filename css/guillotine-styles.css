@@ -17,8 +17,8 @@
 #triangle-bottomleft {
    width: 0px;
    height: 0px;
-   border-bottom: 440px solid white;
-   border-right: 469px solid transparent;
+   border-bottom: 450px solid white;
+   border-right: 480px solid transparent;
    position: absolute;
 }
 
@@ -41,7 +41,7 @@
 
 
 /*MEDIA QUERIES FOR ABOUT US PAGE START*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 960px) {
     #about-banner {
     position: absolute;
     top: 0px;
