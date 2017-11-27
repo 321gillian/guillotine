@@ -1,6 +1,14 @@
-.jcarousel-wrapper {
+#frame {
+    background-color: white;
+    height: 500px;
+    width: 650px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+}
 
-    margin: 10px auto;
+
+.jcarousel-wrapper {
+    margin: 0px auto;
     position: relative;
     -webkit-box-shadow: 0 0 2px #999;
     -moz-box-shadow: 0 0 2px #999;
@@ -10,9 +18,11 @@
 /** Carousel **/
 
 .jcarousel {
+    top: 35px;
+    left: 40px;
     position: relative;
     overflow: hidden;
-    width: 500px;
+    width: 595px;
 }
 
 .jcarousel ul {
@@ -24,9 +34,8 @@
 }
 
 .jcarousel li {
-    width: 200px;
+    width: 270px;
     float: left;
-    border: 1px solid #fff;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -34,44 +43,44 @@
 
 .jcarousel img {
     display: block;
-    max-width: 100%;
+    max-width: 97%;
     height: auto !important;
 }
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev,
+.jcarousel-control-prev, .gallery-text,
 .jcarousel-control-next {
     position: absolute;
-    top: 95%;
-    margin-top: -15px;
+    top: 115%;
     width: 30px;
     height: 30px;
     text-align: center;
     color: #000;
     text-decoration: none;
-    text-shadow: 0 0 1px #000;
     font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 4px #F0EFE7;
-    -moz-box-shadow: 0 0 4px #F0EFE7;
-    box-shadow: 0 0 4px #F0EFE7;
 }
 
 .jcarousel-control-prev {
-    left: 0px;
+    left: 200px;
 }
 
-#gallery-title {
-    padding-top: 20px;
-    padding-left: 30%;
+.gallery-text {
+    left: 260px;
+    position: absolute;
+    top: 115%;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font: 18px/20px Arial, sans-serif;
+    white-space: nowrap;
 }
 
 
 .jcarousel-control-next {
-    left: 425px;
+    left: 400px;
 }
 
 
