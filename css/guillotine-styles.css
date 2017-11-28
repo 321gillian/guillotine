@@ -125,3 +125,31 @@ body {
 }
 /*MEDIA QUERIES FOR ABOUT US PAGE END*/
 
+/*MEDIA QUERIES FOR SERVICES PAGE START*/
+@media screen and (max-width: 960px) {
+    #about-banner {
+    position: absolute;
+    top: 0px;
+    clip: rect(0px,390px,450px,0px);
+    z-index: -1;
+
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #about-banner {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+
+    }
+}
+
+@media screen and (max-width: 990px) {
+    p {
+    padding-right: 20%;
+    }
+}
+/*MEDIA QUERIES FOR SERVICES PAGE END*/
+

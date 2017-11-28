@@ -49,14 +49,14 @@
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev, .gallery-text,
+.jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
     top: 115%;
     width: 30px;
     height: 30px;
     text-align: center;
-    color: #000;
+    color: #de1717;
     text-decoration: none;
     font: 24px/27px Arial, sans-serif;
 }
