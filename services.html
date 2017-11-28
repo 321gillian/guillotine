@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <!--Custom styles-->
+    <link href="css/guillotine-styles.css" rel="stylesheet">
+    <link href="css/jcarousel.responsive.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,11 +20,131 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+ <!--Three column text section starts-->
+ <div class="container">
+  <svg id="services-background" viewBox="0 0 10 10" preserveAspectRatio="none">
+    <path d="M0,0 L12,0 L0,10 z" fill="#e5e5e5" />
+</svg>
+<div class="container mt-2 front">
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<h2>Services</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-md-4">
+  <h3>Cutting and styling</h3>
+  <p>[barber/senior barber/head barber]</p>
+
+<p>short cut & style – £40/£45/£55<br />
+long cut & style – £60/£70/£85</p>
+
+<p>re-style – £25/£30<br />clean up - £15M<br />beard trim - £10</p>
+
+<p>blow dry (short) – £32/£36/£40<br />blow dry (medium) – £36/£40/£44<br />blow dry (long) – £40/£44/£48</p>
+
+<p>short styling – £30/£40/£50<br />
+medium styling - £40/£50/£60<br />
+long styling - £50/£60/£70</p>
+
+<p>All services include consultation,luxury shampoo/conditioner & complementary
+refreshments.</p>
+</div>
+<div class="col-xs-12 col-md-4">
+ <h3>Colour</h3>
+  <p>[barber/senior barber/head barber]</p>
+  <p>Touchup - £50/£55</p>
+  <p>Single Process - £85/£95/£110<br />Double Process - £110/£120</p>
+  <p>Half highlights - £90/£115<br />Full highlights - £100/£115</p>
+
+  <p>Creative/Corrective Colour - on request</p>
+
+  <p>Toner/Glaze - £45</p>
+
+</div>
+<div class="col-xs-12 col-md-4">
+ <h3>Treatments</h3>
+   <p>Olaplex - £35<br />Bespoke Express<br />B'Spk Intense</p>
+</div>
+</div>
+</div>
+ <!--Three column text section ends-->
+
+ <!--Service Guidelines starts-->
+<div class="container">
+<div class="row">
+ <div class="col-xs-0 col-md-8"></div>
+ <div class="col-xs-12 col-md-4">
+ <div class="services-guidelines">
+   <h3> Service<br /> Guidelines</h3>
+   <p> In nisia odio tincidunt
+cursus sit amet eget est
+dui egestas orci elementum</p>
+
+  <p>Mori quam mattis mi auctors, quis
+molesti enisi non augue accumsan</p>
+
+  <p>Fusce cursus nibh velua us volutpat ornares
+at leo – fusce nec neque non ipsum tempus
+ vel suscipit quis sollicitudin es</p>
+</div>
+ </div>
+</div>
+</div>
+<!--Service Guidelines ends-->
+
+ <!--Carousel starts-->
+ <div class="container">
+ <div class="row">
+ <div class="col-xs-12 col-md-4">
+   <h2 class="stripe-box"><span>DESCRIPTION OF
+THE CUT, INCLUDING:<br />
+
+SERVICES CARRIED OUT<br />
+NAME OF STYLIST</span>
+ </div>
+ <div class="col-xs-12 col-md-8">
+ <div class="row">
+ <div class="col-md-1"></div>
+ <div class="col-md-9">
+         <div id="frame">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                    <li><img src="https://placebear.com/270/400" alt="Image 1"></li>
+                  <li><img src="https://placebear.com/270/400" alt="Image 2"></li>
+                    <li><img src="https://placebear.com/270/400" alt="Image 3"></li>
+                    <li><img src="https://placebear.com/270/400" alt="Image 4"></li>
+                    <li><img src="https://placebear.com/270/400" alt="Image 5"></li>
+                      <li><img src="https://placebear.com/270/400" alt="Image 6"></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                <p class="gallery-text">Patron Gallery</p>
+                <a href="#" class="jcarousel-control-next"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </div>
+                </div>
+                </div>
+                </div>
+                 <div class="col-md-"></div>
+
+  </div>
+        </div>
+        </div>
+        </div>
+ <!--Carousel ends-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+     <!--Carousel JQuery-->
+     <script src="jquery/jquery.jcarousel.min.js"></script>
+     <script src="jquery/jcarousel.responsive.js"></script>
+     <script src="js/custom.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+
   </body>
 </html>
