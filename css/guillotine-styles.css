@@ -1,7 +1,94 @@
-/*COMMON STYLES*/
-body {
+
+/* fonts*/
+
+@font-face { 
+	font-family: Ailerons;
+	src:url('../fonts/Ailerons-Typeface.otf');
+}
+
+body{
+	font-family: Ailerons;
     background: #de1717;
     z-index: -3;
+}
+
+/* nav bar css */ 
+
+
+.main_nav{
+	color:#0c0c0c ;
+}
+
+.navbar-brand-override{
+	color:#de1717;
+	font-size: 4em;
+	margin: 0.8em;
+	letter-spacing: 0.2em;
+
+}
+.navbar li a, .navbar {
+  color: #000 !important;
+}
+.navbar-right{
+	color:#e5e5e5;
+	display:inline-block;
+	margin:9px;
+  	font-size: 2em;
+}
+
+
+.footer-logo{
+	color:#de1717;
+	display:inline-block;
+	margin:0.01em;
+	font-size: 3em;
+}
+.sub_footer{
+	color:#e5e5e5;
+	background-color: #0c0c0c;
+}
+
+#footerlink_logo{
+	background-color: #0c0c0c;
+}
+
+.footerlink li > a{
+	color:#e5e5e5;
+	background-color: #0c0c0c;
+	font-size: 0.5em;
+}
+.footer_svg{
+		width: 2em;
+		margin-right: 0.5em;
+}
+
+.subfooter_col{
+	text-align: center;
+	/*border-width: 0.1em;*/
+	border: 1px solid white;
+	padding: 1em;
+	font-size: 1em;
+}
+
+/* Small devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+	.subfooter_col{
+		text-align: center;
+		background-color: #0c0c0c;
+	}
+	#footerlink_logo{
+		text-align: center;
+		visibility:hidden;
+	}
+}
+
+
+
+/* Medium devices (tablet, 768px and up) */
+@media (min-width: 768px) {
+	.subfooter_col{
+		color: #e5e5e5;
+	}
 }
 
 
