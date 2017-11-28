@@ -1,10 +1,16 @@
 
 /* fonts*/
 
-@font-face { 
+@font-face {
 	font-family: Ailerons;
 	src:url('../fonts/Ailerons-Typeface.otf');
 }
+
+@font-face {
+    font-family: Audimat;
+    src:url('../fonts/AUdimat-Regular.otf');
+}
+
 
 body{
 	font-family: Ailerons;
@@ -12,7 +18,8 @@ body{
     z-index: -3;
 }
 
-/* nav bar css */ 
+
+/* nav bar css */
 
 
 .main_nav{
@@ -35,7 +42,6 @@ body{
 	margin:9px;
   	font-size: 2em;
 }
-
 
 .footer-logo{
 	color:#de1717;
@@ -107,11 +113,17 @@ body{
     min-height: 450px;
 }
 
+.about-title {
+    font-size: 72pt;
+    color:#de1717;
+}
+
 #about-background {
     position:absolute;
     width:100%;
     height:1370px;
     left:0;
+    top: 0;
     z-index: -2;
 }
 
@@ -119,8 +131,10 @@ body{
 #triangle-bottomleft {
    width: 0px;
    height: 0px;
+   left: 5;
+   margin-top: -20px;
    border-bottom: 450px solid #e5e5e5;
-   border-right: 480px solid transparent;
+   border-right: 470px solid transparent;
    position: absolute;
 }
 
@@ -136,7 +150,25 @@ body{
 }
 
 #about-banner {
-    height: 440px;
+    height: 450px;
+    margin-top: -20px;
+}
+
+.staff-row {
+    margin-left: 3em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.staff-row h2, h4{
+    color:#de1717;
+}
+
+.staff-row p{
+    font-family: Audimat;
+    font-variant: small-caps;
+    font-size: 18pt;
+
 }
 
 /*STYLES FOR ABOUT US PAGE END*/
@@ -157,7 +189,7 @@ body{
 
 .services-guidelines {
     text-align: right;
-    margin: -200px 10px 50px 0px;
+    margin: -200px 0px 50px 0px;
 }
 
 .stripe-box {
