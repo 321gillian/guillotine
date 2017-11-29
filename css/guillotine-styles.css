@@ -6,28 +6,53 @@
 	src:url('../fonts/Ailerons-Typeface.otf');
 }
 
+@font-face{
+    font-family:AUDIMSCL;
+    src:url('../fonts/AUDIMSCL.ttf'); 
+}
+
 body{
-	font-family: Ailerons;
-    background: #de1717;
+	font-family: AUDIMSCL;
+    background: #e5e5e5;
     z-index: -3;
 }
 
 /* nav bar css */ 
 
 
-.main_nav{
+.navbar-default{
 	color:#0c0c0c ;
+    background-color: #e5e5e5;
 }
 
+.navbar-right{
+    font-family:AUDIMSCL;
+    font-weight: bold;
+
+}
 .navbar-brand-override{
 	color:#de1717;
 	font-size: 4em;
 	margin: 0.8em;
 	letter-spacing: 0.2em;
+    font-family: Ailerons;
 
 }
+
+a.navbar-brand-override:hover{
+	color:#de1717;
+	text-decoration: none;
+
+
+}
+.navbar-nav>li>a:hover{
+	color: #e5e5e5;
+	background-color: #0c0c0c;
+}
+
 .navbar li a, .navbar {
-  color: #000 !important;
+  color: #0c0c0c !important;
+  margin-bottom: 0;
 }
 .navbar-right{
 	color:#e5e5e5;
@@ -42,6 +67,7 @@ body{
 	display:inline-block;
 	margin:0.01em;
 	font-size: 3em;
+    font-family: Ailerons;
 }
 .sub_footer{
 	color:#e5e5e5;
@@ -61,6 +87,7 @@ body{
 		width: 2em;
 		margin-right: 0.5em;
 }
+
 
 .subfooter_col{
 	text-align: center;
