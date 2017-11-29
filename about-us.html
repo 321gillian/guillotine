@@ -20,51 +20,128 @@
     <![endif]-->
   </head>
   <body>
+ <!-- HEADER NAV BAR -->
+   <nav class="navbar navbar-default">
+    <div class="container-fluid">
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
+
+       <!-- HEADER NAV BAR -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand-override" href="#">GUILLOTINE</a>
+      </div>
+
+        <!-- header nav bar with tabs-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 main_nav">
+
+          <ul class="nav navbar-nav navbar-right navbar-right-override">
+            <li class="nav_link"><a href="#">STORY</a></li>
+            <li class="nav_link"><a href="#">SERVICES</a></li>
+            <li class="nav_link"><a href="#">CONTACT</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">    <svg id="about-background" viewBox="0 0 10 10" preserveAspectRatio="none">
+    <path d="M0,0 L80,2 L0,10 z" fill="#e5e5e5" /></path></svg></div>
+<!--end of header nave with tabs-->
   <!--About Us triangle banner and text starts-->
     <div class="container-fluid">
-<svg id="about-background" viewBox="0 0 10 10" preserveAspectRatio="none">
-    <path d="M0,0 L50,0 L0,10 z" fill="#e5e5e5" />
-</svg>
 <div class="row">
-
 <div class="col-xs-12 col-md-12 spacer">
 <div id="triangle-bottomleft">
-  <h1>Lorem <br />ipsum</h1>
-  <p>Suspendisse faucibus tempus lobortis. Ut eget lectus at risus elementum risus
-ut ac velit. In gravida nulla non accumsan aliquam vehicula ac in mi. Nunc ornare tortor et semper molestie, non elementum elit.
- </p>
+  <h1 class="about-title">Lo<br />rem,<br />ipsum</h1>
+  <p class="about-desc">Suspendisse faucibus tempus lobortis.<br /> Ut eget lectus at risus elementum risus<br /> ut ac velit. In gravida nulla non accumsan aliquam vehicula ac in mi.</p>
 </div>
-<img src="https://placebear.com/1270/450" id="about-banner"></div>
+<img src="img/interior-temp.jpg" id="about-banner"></div>
 </div>
 </div>
 </div>
   <!--About Us triangle banner and text ends-->
 
   <!--About Us three column with images starts-->
-<div class="container-fluid mt-2">
+<div class="container-fluid">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row staff-row">
         <div class="col-xs-8 col-md-4">
-          <img src="https://placebear.com/375/450" class="img-responsive" width="375" height="450">
+          <img src="img/Markus.jpg" class="img-responsive" width="375" height="450">
           <h2>Markus Villadsen</h2>
           <h4>Head Stylist</h4>
           <p>Zombie ipsum brains reversus ab  cerebellum viral inferno, brein nam rick mend grimes malum de  superior colliculus poudre monstra.</p>
         </div>
         <div class="col-xs-8 col-md-4">
-          <img src="https://placebear.com/375/450" class="img-responsive" width="375" height="450">
+          <img src="img/Kit.jpg" class="img-responsive" width="375" height="450">
           <h2>Kit Tracey</h2>
           <h4>Owner | Creative Director</h4>
           <p>De carne cerebro lumbering  animata cervello corpora quaeritis.  Summus thalamus brains sit​​, morbo basal ganglia vel maleficia.</p>
        </div>
         <div class="col-xs-8 col-md-4">
-          <img src="https://placebear.com/375/450" class="img-responsive" width="375" height="450">
+          <img src="img/eabha.jpg" class="img-responsive" width="375" height="450">
           <h2>Eabha Clarke</h2>
           <h4>Head Colourist</h4>
           <p>De apocalypsi carne pœnitentiam   gorger omero prefrontal cortex  undead survivor fornix dictum  mauris, vivens fornix mortua.</p>
         </div>
       </div>
  <!--About Us three column with images ends-->
+
+
+    <!--start of sub footer-->
+    <div class="row sub_footer">
+        <!--phone icon-->
+      <div class="col-xs-12 col-sm-4 subfooter_col" >
+        <img src="./img/phone.svg" class= "footer_svg" alt:"phone"/>
+         091 522145</div>
+
+        <!--email icon-->
+        <div class="col-xs-12 col-sm-4 subfooter_col">
+          <img src="./img/email.svg" class="footer_svg" alt:"email"/>
+          CHOP@GUILLOTINE.IE
+        </div>
+        <!--address icon-->
+        <div class="col-xs-12 col-sm-4 subfooter_col">
+           <img src="./img/location.svg" class="footer_svg" alt:"location"/>
+           13 MIDDLE ST. GALWAY CITY. IRE</div>
+    </div>
+<!--end of sub footer-->
+
+    <!--start of footer-->
+      <div class="row" id="footerlink_logo">
+        <div class="col-xs-6">
+          <div class="footer-logo">
+            GUILLOTINE
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="footerlink">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">ABOUT US</a>
+              </li>
+              <li >
+                <a href="#">SERVICES</a>
+              </li>
+              <li>
+               <a href="#">CONTACT</a>
+              </li>
+              <li>
+                <a href="#">GALLERY</a>
+              </li>
+              <li>
+                <a href="#">JOBS</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!--end of footer-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

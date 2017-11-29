@@ -8,9 +8,8 @@
 
 @font-face {
     font-family: Audimat;
-    src:url('../fonts/AUdimat-Regular.otf');
+    src:url('../fonts/AUDIMRG_.TTF');
 }
-
 
 body{
 	font-family: Ailerons;
@@ -114,19 +113,25 @@ body{
 }
 
 .about-title {
-    font-size: 64pt;
+    font-size: 60pt;
+    text-transform: uppercase;
     color:#de1717;
+    margin-left: 20px;
     line-height: 60pt;
     margin-top: -30px;
+      -ms-transform: skewX(-8deg); /* IE 9 */
+    -webkit-transform: skewX(-8deg); /* Safari */
+    transform: skewX(-8deg); /* Standard syntax */
 }
 
 .about-desc {
-    font-family: Audimat;
-    margin-top: 180px;
+    margin-top: 175px;
     margin-left: 10px;
-    width: 330px !important;
+    width: 460px !important;
+    font-family: Audimat;
     font-variant: small-caps;
-    font-size: 12pt;
+    font-size: 18pt;
+    line-height: 18pt;
 }
 
 #about-background {
@@ -145,7 +150,7 @@ body{
    left: 0;
    margin-top: -20px;
    border-bottom: 450px solid #e5e5e5;
-   border-right: 470px solid transparent;
+   border-right: 600px solid transparent;
    position: absolute;
 }
 
@@ -167,19 +172,27 @@ body{
 }
 
 .staff-row {
-    margin-left: 1em;
-    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-left: 0.5em;
     text-align: center;
+    margin-bottom: 4em;
 }
 
 .staff-row h2, h4{
     color:#de1717;
+    line-height: 18pt;
+}
+
+.staff-row h4 {
+    font-family: Audimat;
+    text-transform: uppercase;
 }
 
 .staff-row p{
     font-family: Audimat;
     font-variant: small-caps;
     font-size: 18pt;
+    line-height: 18pt;
 
 }
 
