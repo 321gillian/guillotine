@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Audimat;
-    src:url('../fonts/AUDIMRG_.TTF');
+    src:url('../fonts/AUDIMSCL.TTF');
 }
 
 body{
@@ -103,6 +103,10 @@ body{
   margin-top: 5%;
 }
 
+.mt-4 {
+  margin-top: 10%;
+}
+
 .logo {
     height: 100px;
     align-content: center;
@@ -119,7 +123,7 @@ body{
     margin-left: 20px;
     line-height: 60pt;
     margin-top: -30px;
-      -ms-transform: skewX(-8deg); /* IE 9 */
+      -ms-transform: skewX(-8deg); /* IE */
     -webkit-transform: skewX(-8deg); /* Safari */
     transform: skewX(-8deg); /* Standard syntax */
 }
@@ -206,25 +210,76 @@ body{
     height:950px;
     left:0;
     z-index: -4;
+    letter-spacing: : 3px;
 }
 
 #front {
     z-index: -2
 }
 
-.services-guidelines {
-    text-align: right;
-    margin: -200px 0px 50px 0px;
+.services-title {
+    font-size: 32pt;
+    font-family: Audimat;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 0;
+    margin-left: -10px;
+    letter-spacing: 10px;
 }
 
+.section-2 {
+    padding-left: 5%;
+}
+
+.services-section-heading {
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: Audimat;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+}
+
+.services-body-copy {
+  font-family: Audimat;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 18pt;
+  line-height: 18pt;
+}
+
+.services-guidelines {
+    text-align: right;
+    margin: -240px 30px 50px 0px;
+    font-family: Audimat;
+}
+
+.services-guidelines h3 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-guidelines p {
+    font-size: 16pt;
+    line-height: 16pt;
+    color: white;
+}
+
+.image-caption, #default-caption {
+    font-family: Audimat;
+    font-size: 10pt;
+    margin: 10px 10px 20px 20px;
+    text-transform: uppercase;
+    line-height: 18pt;
+    letter-spacing: 3px;
+}
 .stripe-box {
    margin-top: 80%;
+   margin-right: -50px;
     float: right;
     text-align: right;
-    padding: 5px;
+    padding: 2px;
     border: 3px solid white;
-    font-size: 14px;
-    font-variant: small-caps;
     height: 150px;
     width: 235px;
     color: white;
@@ -237,6 +292,8 @@ body{
   );
   background-size: 100% 10px;
 }
+
+
 
 /*STYLES FOR SERVICES PAGE END*/
 

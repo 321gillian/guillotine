@@ -1,15 +1,12 @@
-#frame {
-    background-color: white;
-    height: 500px;
-    width: 650px;
-    margin-bottom: 40px;
-    margin-left: 32px;
+#polaroid {
+    position: relative;
+    z-index: -2;
 }
 
 
 .jcarousel-wrapper {
-    margin: 0px auto;
-    position: relative;
+    top: 0;
+    position: absolute;
     -webkit-box-shadow: 0 0 2px #999;
     -moz-box-shadow: 0 0 2px #999;
     box-shadow: 0 0 0px #999;
@@ -18,11 +15,11 @@
 /** Carousel **/
 
 .jcarousel {
-    top: 35px;
-    left: 40px;
+    margin-left: 25px;
     position: relative;
     overflow: hidden;
     width: 595px;
+    z-index: 0;
 }
 
 .jcarousel ul {
@@ -34,7 +31,8 @@
 }
 
 .jcarousel li {
-    width: 270px;
+    width: 290px;
+    margin: 25px 10px 25px 10px;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -52,13 +50,13 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 115%;
+    top: 97%;
     width: 30px;
     height: 30px;
     text-align: center;
     color: #de1717;
-    text-decoration: none;
-    font: 24px/27px Arial, sans-serif;
+    font-family: Audimat;
+    font-size: 22pt;
 }
 
 .jcarousel-control-prev {
@@ -66,21 +64,22 @@
 }
 
 .gallery-text {
-    left: 260px;
+    left: 250px;
+    font-weight: bold;
+    font-family: Audimat;
+    font-size: 18pt;
     position: absolute;
-    top: 115%;
+    top: 97%;
     width: 60px;
     height: 30px;
     text-align: center;
     color: #000;
-    text-decoration: none;
-    font: 18px/20px Arial, sans-serif;
     white-space: nowrap;
 }
 
 
 .jcarousel-control-next {
-    left: 400px;
+    left: 440px;
 }
 
 
