@@ -103,6 +103,10 @@ body{
   margin-top: 5%;
 }
 
+.mt-4 {
+  margin-top: 10%;
+}
+
 .logo {
     height: 100px;
     align-content: center;
@@ -212,11 +216,37 @@ body{
     z-index: -2
 }
 
+.services-section-heading {
+  font-family: Audimat;
+  text-transform: uppercase;
+}
+
+.services-body-copy {
+  font-family: Audimat;
+    font-variant: small-caps;
+    font-size: 18pt;
+    line-height: 18pt;
+}
+
 .services-guidelines {
     text-align: right;
     margin: -200px 0px 50px 0px;
+    font-family: Audimat;
 }
 
+.services-guidelines h3 {
+    text-transform: uppercase;
+}
+
+.services-guidelines p {
+    color: white;
+}
+
+.image-caption, #default-caption {
+    font-family: Audimat;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
 .stripe-box {
    margin-top: 80%;
     float: right;
