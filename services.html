@@ -23,23 +23,23 @@
  <!--Three column text section starts-->
  <div class="container">
   <svg id="services-background" viewBox="0 0 10 10" preserveAspectRatio="none">
-    <path d="M0,0 L12,0 L0,10 z" fill="#e5e5e5" />
+    <path d="M0,0 L14,0 L0,10 z" fill="#e5e5e5" />
 </svg>
 <div class="container mt-2 front">
 <div class="row">
 <div class="col-xs-12 col-md-12">
-<h2>Services</h2>
+<h1 class="services-title">Services</h1>
 </div>
 </div>
 <div class="row">
 <div class="col-xs-12 col-md-4">
-  <h3>Cutting and styling</h3>
-  <p>[barber/senior barber/head barber]</p>
+  <h3 class="services-section-heading">Cutting and styling</h3>
+  <span class="services-body-copy"><p>[barber/senior barber/head barber]</p>
 
 <p>short cut & style – £40/£45/£55<br />
 long cut & style – £60/£70/£85</p>
 
-<p>re-style – £25/£30<br />clean up - £15M<br />beard trim - £10</p>
+<p>re-style – £25/£30<br />clean up - £15<br />beard trim - £10</p>
 
 <p>blow dry (short) – £32/£36/£40<br />blow dry (medium) – £36/£40/£44<br />blow dry (long) – £40/£44/£48</p>
 
@@ -48,23 +48,23 @@ medium styling - £40/£50/£60<br />
 long styling - £50/£60/£70</p>
 
 <p>All services include consultation,luxury shampoo/conditioner & complementary
-refreshments.</p>
+refreshments.</p></span>
 </div>
-<div class="col-xs-12 col-md-4">
- <h3>Colour</h3>
-  <p>[barber/senior barber/head barber]</p>
+<div class="col-xs-12 col-md-4 section-2">
+ <h3 class="services-section-heading">Colour</h3><span class="services-body-copy">
+  <p>[tech/senior tech/head tech]</p>
   <p>Touchup - £50/£55</p>
-  <p>Single Process - £85/£95/£110<br />Double Process - £110/£120</p>
+  <p>single Process - £85/£95/£110<br />double Process - £110/£120</p>
   <p>Half highlights - £90/£115<br />Full highlights - £100/£115</p>
 
   <p>Creative/Corrective Colour - on request</p>
 
-  <p>Toner/Glaze - £45</p>
+  <p>Toner/Glaze - £45</p></span>
 
 </div>
-<div class="col-xs-12 col-md-4">
- <h3>Treatments</h3>
-   <p>Olaplex - £35<br />Bespoke Express<br />B'Spk Intense</p>
+<div class="col-xs-12 col-md-4 section-2">
+ <h3 class="services-section-heading">Treatments</h3>
+  <span class="services-body-copy"> <p>olaplex - £35<br />bespoke express<br />b'spk intense</p></span>
 </div>
 </div>
 </div>
@@ -73,19 +73,20 @@ refreshments.</p>
  <!--Service Guidelines starts-->
 <div class="container">
 <div class="row">
- <div class="col-xs-0 col-md-8"></div>
- <div class="col-xs-12 col-md-4">
+ <div class="col-xs-0 col-md-5"></div>
+ <div class="col-xs-12 col-md-7">
  <div class="services-guidelines">
    <h3> Service<br /> Guidelines</h3>
-   <p> In nisia odio tincidunt
-cursus sit amet eget est
+    <ul>
+   <p> In nisia odio tincidunt<br />
+cursus sit amet eget est<br />
 dui egestas orci elementum</p>
 
-  <p>Mori quam mattis mi auctors, quis
+  <p>Mori quam mattis mi auctors, quis<br />
 molesti enisi non augue accumsan</p>
 
-  <p>Fusce cursus nibh velua us volutpat ornares
-at leo – fusce nec neque non ipsum tempus
+  <p>Fusce cursus nibh velua us volutpat ornares<br />
+at leo – fusce nec neque non ipsum tempus<br />
  vel suscipit quis sollicitudin es</p>
 </div>
  </div>
@@ -97,37 +98,35 @@ at leo – fusce nec neque non ipsum tempus
  <div class="container">
  <div class="row">
  <div class="col-xs-12 col-md-4">
-   <h2 class="stripe-box"><span>DESCRIPTION OF
-THE CUT, INCLUDING:<br />
-
-SERVICES CARRIED OUT<br />
-NAME OF STYLIST</span>
+   <h2 class="stripe-box">
+   <p id="default-caption">Description:<br />Haircut done with scissors<br />Styled by:<br />Markus</p>
+  <div class="image-caption"></div>
  </div>
  <div class="col-xs-12 col-md-8">
  <div class="row">
  <div class="col-md-1"></div>
  <div class="col-md-9">
-         <div id="frame">
+         <img id="polaroid" src="img/polaroid.png" width="650px" height="500px" alt="caption1">
             <div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
-                    <li><img src="https://placebear.com/270/400" alt="Image 1"></li>
-                  <li><img src="https://placebear.com/270/400" alt="Image 2"></li>
-                    <li><img src="https://placebear.com/270/400" alt="Image 3"></li>
-                    <li><img src="https://placebear.com/270/400" alt="Image 4"></li>
-                    <li><img src="https://placebear.com/270/400" alt="Image 5"></li>
-                      <li><img src="https://placebear.com/270/400" alt="Image 6"></li>
+                   <li><img src="https://placebear.com/290/400" title="Description:<br />Haircut done with scissors" alt="<br />Styled by:<br />Markus"></li>
+                <li><img src="https://placebear.com/290/400"></li>
+                      <li><img src="https://placebear.com/290/400" title="Description:<br />Haircut done with scalpel"   alt="<br />Styled by:<br />Kit"></li>
+                   <li><img src="https://placebear.com/290/400"></li>
+                      <li><img src="https://placebear.com/290/400" title="Description:<br />Haircut done by magic"   alt="<br />Styled by:<br />Eabha"></li>
+                      <li><img src="https://placebear.com/290/400"></li>
                     </ul>
                 </div>
 
-                <a href="#" class="jcarousel-control-prev"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                <a href="#" class="jcarousel-control-prev"><span>&larr;</span></a>
                 <p class="gallery-text">Patron Gallery</p>
-                <a href="#" class="jcarousel-control-next"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                <a href="#" class="jcarousel-control-next"><span>&rarr;</span></a>
                 </div>
                 </div>
                 </div>
                 </div>
-                 <div class="col-md-"></div>
+                 <div class="col-md-1"></div>
 
   </div>
         </div>
@@ -135,8 +134,12 @@ NAME OF STYLIST</span>
         </div>
  <!--Carousel ends-->
 
+ <!--space under gallery starts-->
+ <div class="col-xs-12 col-md-12 mt-4"></div>
+ <!--space under gallery ends-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 

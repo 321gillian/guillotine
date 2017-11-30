@@ -1,7 +1,7 @@
 
 /* fonts*/
 
-@font-face { 
+@font-face {
 	font-family: Ailerons;
 	src:url('../fonts/Ailerons-Typeface.otf');
 }
@@ -17,7 +17,8 @@ body{
     z-index: -3;
 }
 
-/* nav bar css */ 
+
+/* nav bar css */
 
 
 .navbar-default{
@@ -60,7 +61,6 @@ a.navbar-brand-override:hover{
 	margin:9px;
   	font-size: 2em;
 }
-
 
 .footer-logo{
 	color:#de1717;
@@ -125,6 +125,10 @@ a.navbar-brand-override:hover{
   margin-top: 5%;
 }
 
+.mt-4 {
+  margin-top: 10%;
+}
+
 .logo {
     height: 100px;
     align-content: center;
@@ -134,11 +138,34 @@ a.navbar-brand-override:hover{
     min-height: 450px;
 }
 
+.about-title {
+    font-size: 60pt;
+    text-transform: uppercase;
+    color:#de1717;
+    margin-left: 20px;
+    line-height: 60pt;
+    margin-top: -30px;
+      -ms-transform: skewX(-8deg); /* IE */
+    -webkit-transform: skewX(-8deg); /* Safari */
+    transform: skewX(-8deg); /* Standard syntax */
+}
+
+.about-desc {
+    margin-top: 175px;
+    margin-left: 10px;
+    width: 460px !important;
+    font-family: AUDIMSCL;
+    font-variant: small-caps;
+    font-size: 18pt;
+    line-height: 18pt;
+}
+
 #about-background {
     position:absolute;
     width:100%;
-    height:1370px;
+    height:1390px;
     left:0;
+    top: 0;
     z-index: -2;
 }
 
@@ -146,8 +173,10 @@ a.navbar-brand-override:hover{
 #triangle-bottomleft {
    width: 0px;
    height: 0px;
+   left: 0;
+   margin-top: -20px;
    border-bottom: 450px solid #e5e5e5;
-   border-right: 480px solid transparent;
+   border-right: 600px solid transparent;
    position: absolute;
 }
 
@@ -163,7 +192,34 @@ a.navbar-brand-override:hover{
 }
 
 #about-banner {
-    height: 440px;
+    height: 450px;
+    margin-top: -20px;
+    left: 0;
+}
+
+.staff-row {
+    margin-top: 2em;
+    margin-left: 0.5em;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.staff-row h2, h4{
+    color:#de1717;
+    line-height: 18pt;
+}
+
+.staff-row h4 {
+    font-family: AUDIMSCL;
+    text-transform: uppercase;
+}
+
+.staff-row p{
+    font-family: AUDIMSCL;
+    font-variant: small-caps;
+    font-size: 18pt;
+    line-height: 18pt;
+
 }
 
 /*STYLES FOR ABOUT US PAGE END*/
@@ -176,25 +232,76 @@ a.navbar-brand-override:hover{
     height:950px;
     left:0;
     z-index: -4;
+    letter-spacing: : 3px;
 }
 
 #front {
     z-index: -2
 }
 
-.services-guidelines {
-    text-align: right;
-    margin: -200px 10px 50px 0px;
+.services-title {
+    font-size: 32pt;
+    font-family: AUDIMSCL;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 0;
+    margin-left: -10px;
+    letter-spacing: 10px;
 }
 
+.section-2 {
+    padding-left: 5%;
+}
+
+.services-section-heading {
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: AUDIMSCL;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+}
+
+.services-body-copy {
+  font-family: AUDIMSCL;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 18pt;
+  line-height: 18pt;
+}
+
+.services-guidelines {
+    text-align: right;
+    margin: -240px 30px 50px 0px;
+    font-family: AUDIMSCL;
+}
+
+.services-guidelines h3 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-guidelines p {
+    font-size: 16pt;
+    line-height: 16pt;
+    color: white;
+}
+
+.image-caption, #default-caption {
+    font-family: AUDIMSCL;
+    font-size: 10pt;
+    margin: 10px 10px 20px 20px;
+    text-transform: uppercase;
+    line-height: 18pt;
+    letter-spacing: 3px;
+}
 .stripe-box {
    margin-top: 80%;
+   margin-right: -50px;
     float: right;
     text-align: right;
-    padding: 5px;
+    padding: 2px;
     border: 3px solid white;
-    font-size: 14px;
-    font-variant: small-caps;
     height: 150px;
     width: 235px;
     color: white;
@@ -207,6 +314,8 @@ a.navbar-brand-override:hover{
   );
   background-size: 100% 10px;
 }
+
+
 
 /*STYLES FOR SERVICES PAGE END*/
 
@@ -238,4 +347,32 @@ a.navbar-brand-override:hover{
     }
 }
 /*MEDIA QUERIES FOR ABOUT US PAGE END*/
+
+/*MEDIA QUERIES FOR SERVICES PAGE START*/
+@media screen and (max-width: 960px) {
+    #about-banner {
+    position: absolute;
+    top: 0px;
+    clip: rect(0px,390px,450px,0px);
+    z-index: -1;
+
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #about-banner {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+
+    }
+}
+
+@media screen and (max-width: 990px) {
+    p {
+    padding-right: 20%;
+    }
+}
+/*MEDIA QUERIES FOR SERVICES PAGE END*/
 
