@@ -6,13 +6,13 @@
 	src:url('../fonts/Ailerons-Typeface.otf');
 }
 
-@font-face {
-    font-family: Audimat;
-    src:url('../fonts/AUDIMSCL.TTF');
+@font-face{
+    font-family:AUDIMSCL;
+    src:url('../fonts/AUDIMSCL.ttf'); 
 }
 
 body{
-	font-family: Ailerons;
+	font-family: AUDIMSCL;
     background: #de1717;
     z-index: -3;
 }
@@ -21,19 +21,39 @@ body{
 /* nav bar css */
 
 
-.main_nav{
+.navbar-default{
 	color:#0c0c0c ;
+    background-color: #e5e5e5;
 }
 
+.navbar-right{
+    font-family:AUDIMSCL;
+    font-weight: bold;
+
+}
 .navbar-brand-override{
 	color:#de1717;
 	font-size: 4em;
 	margin: 0.8em;
 	letter-spacing: 0.2em;
+    font-family: Ailerons;
 
 }
+
+a.navbar-brand-override:hover{
+	color:#de1717;
+	text-decoration: none;
+
+
+}
+.navbar-nav>li>a:hover{
+	color: #e5e5e5;
+	background-color: #0c0c0c;
+}
+
 .navbar li a, .navbar {
-  color: #000 !important;
+  color: #0c0c0c !important;
+  margin-bottom: 0;
 }
 .navbar-right{
 	color:#e5e5e5;
@@ -47,6 +67,7 @@ body{
 	display:inline-block;
 	margin:0.01em;
 	font-size: 3em;
+    font-family: Ailerons;
 }
 .sub_footer{
 	color:#e5e5e5;
@@ -66,6 +87,7 @@ body{
 		width: 2em;
 		margin-right: 0.5em;
 }
+
 
 .subfooter_col{
 	text-align: center;
@@ -132,7 +154,7 @@ body{
     margin-top: 175px;
     margin-left: 10px;
     width: 460px !important;
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     font-variant: small-caps;
     font-size: 18pt;
     line-height: 18pt;
@@ -188,12 +210,12 @@ body{
 }
 
 .staff-row h4 {
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     text-transform: uppercase;
 }
 
 .staff-row p{
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     font-variant: small-caps;
     font-size: 18pt;
     line-height: 18pt;
@@ -225,7 +247,7 @@ body{
 
 .services-title {
     font-size: 32pt;
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     font-weight: bold;
     text-transform: uppercase;
     top: 0;
@@ -241,13 +263,13 @@ body{
 .services-section-heading {
     font-size: 22pt;
     font-weight: bold;
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     text-transform: uppercase;
     margin-bottom: -1px;
 }
 
 .services-body-copy {
-  font-family: Audimat;
+  font-family: AUDIMSCL;
   text-transform: lowercase;
   font-variant: small-caps;
   font-size: 18pt;
@@ -256,8 +278,13 @@ body{
 
 .services-guidelines {
     text-align: right;
+<<<<<<< HEAD
     margin: -240px 30px 40px 0px;
     font-family: Audimat;
+=======
+    margin: -240px 30px 50px 0px;
+    font-family: AUDIMSCL;
+>>>>>>> 4a928244a765a83a0c08122b98539af8cafa3d76
 }
 
 .services-guidelines h3 {
@@ -273,7 +300,7 @@ body{
 }
 
 .image-caption, #default-caption {
-    font-family: Audimat;
+    font-family: AUDIMSCL;
     font-size: 10pt;
     margin: 10px 10px 20px 20px;
     text-transform: uppercase;
