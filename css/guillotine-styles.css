@@ -8,7 +8,7 @@
 
 @font-face{
     font-family:AUDIMSCL;
-    src:url('../fonts/AUDIMSCL.ttf'); 
+    src:url('../fonts/AUDIMSCL.ttf');
 }
 
 body{
@@ -144,7 +144,7 @@ a.navbar-brand-override:hover{
     color:#de1717;
     margin-left: 20px;
     line-height: 60pt;
-    margin-top: -30px;
+    margin-top: -20px;
       -ms-transform: skewX(-8deg); /* IE */
     -webkit-transform: skewX(-8deg); /* Safari */
     transform: skewX(-8deg); /* Standard syntax */
@@ -175,7 +175,7 @@ a.navbar-brand-override:hover{
    height: 0px;
    left: 0;
    margin-top: -20px;
-   border-bottom: 450px solid #e5e5e5;
+   border-bottom: 470px solid #e5e5e5;
    border-right: 600px solid transparent;
    position: absolute;
 }
@@ -192,7 +192,7 @@ a.navbar-brand-override:hover{
 }
 
 #about-banner {
-    height: 450px;
+    width: 100%;
     margin-top: -20px;
     left: 0;
 }
@@ -278,13 +278,8 @@ a.navbar-brand-override:hover{
 
 .services-guidelines {
     text-align: right;
-<<<<<<< HEAD
-    margin: -240px 30px 40px 0px;
-    font-family: Audimat;
-=======
     margin: -240px 30px 50px 0px;
     font-family: AUDIMSCL;
->>>>>>> 4a928244a765a83a0c08122b98539af8cafa3d76
 }
 
 .services-guidelines h3 {
