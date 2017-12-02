@@ -3,7 +3,8 @@
     <head>
         <title>CONTACT</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/guillotine-styles.css">
 
         <style type="text/css">
             #map {
@@ -11,18 +12,67 @@
                 height: 400px;
             }
 
-            #radios {
+            #contact-header {
+              margin-top: 30px;
+              color: #eee;
+              font-size: 28px;
+            }
+
+            .radio-group > label {
               position: relative;
               left: 50%;
               transform: translateX(-50%);
+              color: #eee;
+              font-size: 16px;
             }
 
               #contact-form {
-                background: red; /* For browsers that do not support gradients */
-                background: -webkit-linear-gradient(black, red); /* For Safari 5.1 to 6.0 */
-                background: -o-linear-gradient(black, red); /* For Opera 11.1 to 12.0 */
-                background: -moz-linear-gradient(black, red); /* For Firefox 3.6 to 15 */
-                background: linear-gradient(black, red); /* Standard syntax */
+                background: #de1717; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(black, #de1717); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(black, #de1717); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(black, #de1717); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(black, #de1717); /* Standard syntax */
+            }
+
+            .noPadding {
+              padding: 0px!important;
+            }
+
+            #contact-message-textarea {
+              width: 100%;
+            }
+
+            .submit-button {
+              border: 2px solid #fff;
+              border-radius: 25px;
+              color: #fff;
+              font-size: 16pt;
+            }
+
+            input.form-control,
+            select.form-control,
+            textarea.form-control {
+              background-color: #000;
+              color: #eee;
+              border-color: #444!important;
+              margin-bottom: 0px;
+            }
+
+            #contact-submit {
+              height: 0px;
+              margin-bottom: 0px;
+            }
+
+            textarea {
+              overflow-y: scroll;
+              resize: none;
+            }
+
+            .submit-button {
+              position: relative;
+              top: 15px;
+              left: 15px;
+              z-index: 100000;
             }
         </style>
 
@@ -89,42 +139,87 @@
         </script>
     </head>
     <body>
-      <div class="col-lg-3 col-sm-6 col-xs-12" id="contact-form">
-        <form class="">
-          <h4 class="contact-header text-center"> - CUT TO THE CHASE - </h4>
-          <div class="" id="radios">
+  <!--start of nav-->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
-            <div class="form-group text-center">
-        <div class="col-sm-12">
-            <label class="radio-inline" id="radios"> <input type="radio" name="season" value="individual" checked> INDIVIDUAL </label>
-            <label class="radio-inline" id="radios"> <input type="radio" name="season" value="commercial">COMMERCIAL </label>
+
+         <!-- HEADER NAV BAR -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand-override" href="#">GUILLOTINE</a>
         </div>
-    </div>
-          </div>
 
-          <div class="row form-group contact-details has-danger">
-            <input class="form-control col-sm-12" type="text" name="first-name" value="" placeholder="FIRST NAME">
-            <input class="form-control col-sm-12" type="text" name="last-name" value="" placeholder="LAST NAME">
-            <input class="form-control col-sm-12" type="email" name="email" value="" placeholder="EMAIL">
-            <input class="form-control col-sm-12" type="tel" name="contact-number" value="" placeholder="CONTACT NUMBER">
-          </div>
+          <!-- header nav bar with tabs-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 main_nav">
 
-          <div class="row form-group contact-message has-danger">
-            <input class="form-control col-sm-12" type="text" name="subject" value="" placeholder="SUBJECT">
-            <select class="form-control col-sm-12" name="category">
-              <option value="Unspecified">CATEGORY</option>
-              <option value="Category1">Category1</option>
-              <option value="Category2">Category2</option>
-              <option value="Category3">Category3</option>
-            </select>
-            <textarea name="message" rows="8" cols="80" placeholder="WRITE YOUR MESSAGE HERE..."></textarea>
-            <button type="button" class="btn">SUBMIT</a>
-          </div> 
+            <ul class="nav navbar-nav navbar-right navbar-right-override">
+              <li class="nav_link"><a href="#">STORY</a></li>
+              <li class="nav_link"><a href="#">SERVICES</a></li>
+              <li class="nav_link"><a href="#">CONTACT</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  <!--end of header nave with tabs-->
 
-        </form>
+   <!--Three column text section starts-->
+   <div class="container-fluid">
+    <svg id="services-background" viewBox="0 0 10 10" preserveAspectRatio="none">
+      <path d="M0,0 L15,0 L0,10 z" fill="#e5e5e5" />
+    </svg>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12" id="contact-form">
+          <form class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4 id="contact-header" class="text-center"> - CUT TO THE CHASE - </h4>
+            <div class="row" id="radios">
+
+                <!-- <div class="col-sm-12 noPadding"> -->
+                  <div class="form-group noPadding col-sm-6 radio-group"><label class="radio-inline" id="radios"><input type="radio" name="season" value="individual" checked> INDIVIDUAL </label></div>
+                  <div class="form-group noPadding col-sm-6 radio-group"><label class="radio-inline" id="radios"><input type="radio" name="season" value="commercial"> COMMERCIAL </label></div>
+              <!-- </div> -->
+            </div>
+
+            <div id="contact-details" class="row form-group has-danger">
+              <input class="form-control col-sm-12" type="text" name="first-name" value="" placeholder="FIRST NAME" required>
+              <input class="form-control col-sm-12" type="text" name="last-name" value="" placeholder="LAST NAME" required>
+              <input class="form-control col-sm-12" type="email" name="email" value="" placeholder="EMAIL" required>
+              <input class="form-control col-sm-12" type="tel" name="contact-number" value="" placeholder="CONTACT NUMBER">
+            </div>
+
+            <div id="contact-category" class="row form-group has-danger">
+              <input class="form-control col-sm-12" type="text" name="subject" value="" placeholder="SUBJECT">
+              <select class="form-control col-sm-12" name="category">
+                <option value="Unspecified" class="placeholder-option">CATEGORY</option>
+                <option value="Category1">Category1</option>
+                <option value="Category2">Category2</option>
+                <option value="Category3">Category3</option>
+              </select>
+            </div>
+            <div id="contact-message" class="row form-group has-danger">
+              <textarea id="contact-message-textarea" class="form-control" name="message" rows="4" width="100%" placeholder="WRITE YOUR MESSAGE HERE..."></textarea>
+            </div>
+            <div id="contact-submit" class="row form-group has-danger">
+              <a type="button" class="btn submit-button">SUBMIT</a>
+            </div>
+
+          </form>
+
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 noPadding">
+          <svg viewBox="0 0 10 10" preserveAspectRatio="none">
+            <path d="M0,0 L10,0 L0,4.5 z" fill="#de1717" />
+          </svg>
+        </div>
       </div>
 
         <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
-        <div class="float-md-right" id="map"></div>
+        <div class="float-md-right" id="map" hidden ></div>
     </body>
 </html>
