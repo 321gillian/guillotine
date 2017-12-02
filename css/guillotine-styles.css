@@ -38,9 +38,10 @@ body{
 }
 
 .logo {
-    height: 100px;
+    max-height: 100px;
     margin-bottom: 4em;
     align-content: center;
+    max-width: 200px;
 }
 
 .navbar-default{
@@ -49,7 +50,7 @@ body{
 }
 
 .navbar-right{
-    font-family:AUDIMSCL;
+    font-family: AUDIMSCL;
     font-weight: bold;
 
 
@@ -373,6 +374,7 @@ a.navbar-brand-override:hover{
         margin: 0 auto;
     }
 
+
     .white-second
     {
         color: white !important;
@@ -398,14 +400,19 @@ a.navbar-brand-override:hover{
     }
 }
 
-
-
-
-
-
 /*MEDIA QUERIES FOR ABOUT US PAGE END*/
 
 /*MEDIA QUERIES FOR SERVICES PAGE START*/
+
+@media screen and (max-width: 990px) {
+.logo {
+
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+}
 
 /*MEDIA QUERIES FOR SERVICES PAGE END*/
 
