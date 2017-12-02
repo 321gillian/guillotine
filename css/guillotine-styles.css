@@ -207,20 +207,18 @@ a.navbar-brand-override:hover{
 #triangle-bottomleft {
    width: 0px;
    height: 0px;
-   margin-top: 20px;
-   margin-left: -20px;
-   border-bottom: 500px solid #e5e5e5;
+   margin-left: 0px;
+   border-bottom: 450px solid #e5e5e5;
    border-right: 600px solid transparent;
    position: absolute;
    z-index: 0;
 }
 
-
 #about-banner {
     height: 450px;
     width: 100%;
     object-fit: cover;
-    margin-top: -490px;
+    margin-top: -470px;
     z-index: 0;
 }
 .staff-row {
@@ -387,16 +385,16 @@ a.navbar-brand-override:hover{
         border-right: 0px;
     }
 
-
     .about-desc, .about-title {
         color: white;
     }
     .about-desc {
         width: 80%;
         background-color: #000;
+        margin-bottom: 50px;
     }
     .about-title {
-           margin-top: 100px;
+           margin-top: 80px;
     }
 }
 
