@@ -8,7 +8,7 @@
 
 @font-face{
     font-family:AUDIMSCL;
-    src:url('../fonts/AUDIMSCL.ttf'); 
+    src:url('../fonts/AUDIMSCL.ttf');
 }
 
 body{
@@ -30,6 +30,12 @@ body{
     word-wrap: break-word;
     float:left;
     display: block;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 2em;
+    align-content: center;
 }
 
 .navbar-default{
@@ -61,6 +67,7 @@ a.navbar-brand-override:hover{
 	color: #e5e5e5;
 	background-color: #0c0c0c;
 }
+
 
 .navbar li a, .navbar {
   color: #0c0c0c !important;
@@ -150,10 +157,6 @@ a.navbar-brand-override:hover{
   margin-top: 10%;
 }
 
-.logo {
-    height: 100px;
-    align-content: center;
-}
 
 .spacer {
     min-height: 450px;
