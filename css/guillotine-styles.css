@@ -17,6 +17,9 @@ body{
     z-index: -3;
 }
 
+<<<<<<< HEAD
+/* header, footer, background element css */
+=======
 
 /* nav bar css */
 
@@ -43,6 +46,7 @@ body{
     align-content: center;
     max-width: 200px;
 }
+>>>>>>> master
 
 .navbar-default{
 	color:#0c0c0c ;
@@ -86,6 +90,13 @@ a.navbar-brand-override:hover{
   	font-size: 2em;
 }
 
+.services-background {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+}
+
 .footer-logo{
 	color:#de1717;
 	display:inline-block;
@@ -112,7 +123,6 @@ a.navbar-brand-override:hover{
 		margin-right: 0.5em;
 }
 
-
 .subfooter_col{
 	text-align: center;
 	/*border-width: 0.1em;*/
@@ -132,6 +142,8 @@ a.navbar-brand-override:hover{
 		visibility:hidden;
 	}
 
+<<<<<<< HEAD
+=======
     .main_logo{
         display: none;
 
@@ -145,13 +157,13 @@ a.navbar-brand-override:hover{
 
 }
 
+>>>>>>> master
 /* Medium devices (tablet, 768px and up) */
 @media (min-width: 768px) {
 	.subfooter_col{
 		color: #e5e5e5;
 	}
 }
-
 
 /*STYLES FOR ABOUT US PAGE START*/
 .mt-1 {
@@ -415,4 +427,3 @@ a.navbar-brand-override:hover{
 }
 
 /*MEDIA QUERIES FOR SERVICES PAGE END*/
-
