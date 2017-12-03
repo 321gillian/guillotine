@@ -6,9 +6,21 @@
 	src:url('../fonts/Ailerons-Typeface.otf');
 }
 
+@font-face {
+    font-family:AUDIMSCL;
+    src:url('../fonts/AUDIMSC.ttf');
+}
+
 @font-face{
     font-family:AUDIMSCL;
-    src:url('../fonts/AUDIMSCL.ttf'); 
+    src:url('../fonts/AUDIMSCL.ttf');
+    font-weight: lighter;
+}
+
+@font-face{
+    font-family:AUDIMSCL;
+    src:url('../fonts/AUDIMSCB.ttf');
+    font-weight: bold;
 }
 
 body{
@@ -28,23 +40,20 @@ body{
 
 .navbar-right{
     font-family:AUDIMSCL;
-    font-weight: bold;
-
+    line-height: 26pt;
 }
+
 .navbar-brand-override{
-	color:#de1717;
-	font-size: 4em;
+	color:#de1717!important;
+	font-size: 26pt!important;
 	margin: 0.8em;
 	letter-spacing: 0.2em;
     font-family: Ailerons;
-
 }
 
 a.navbar-brand-override:hover{
 	color:#de1717;
 	text-decoration: none;
-
-
 }
 .navbar-nav>li>a:hover{
 	color: #e5e5e5;
@@ -54,19 +63,27 @@ a.navbar-brand-override:hover{
 .navbar li a, .navbar {
   color: #0c0c0c !important;
   margin-bottom: 0;
+  font-size: 14pt;
 }
+
+.nav_link {
+  margin-top: 3.75pt!important;
+}
+
 .navbar-right{
 	color:#e5e5e5;
 	display:inline-block;
 	margin:9px;
   	font-size: 2em;
+    /* font-weight: bold; */
 }
 
 .footer-logo{
 	color:#de1717;
 	display:inline-block;
-	margin:0.01em;
-	font-size: 3em;
+	margin-left: 12px;
+    margin-top: 6px;
+	font-size: 30pt;
     font-family: Ailerons;
 }
 .sub_footer{
@@ -88,11 +105,10 @@ a.navbar-brand-override:hover{
 		margin-right: 0.5em;
 }
 
-
 .subfooter_col{
 	text-align: center;
 	/*border-width: 0.1em;*/
-	border: 1px solid white;
+	border: 1px solid #333;
 	padding: 1em;
 	font-size: 1em;
 }
@@ -109,15 +125,12 @@ a.navbar-brand-override:hover{
 	}
 }
 
-
-
 /* Medium devices (tablet, 768px and up) */
 @media (min-width: 768px) {
 	.subfooter_col{
 		color: #e5e5e5;
 	}
 }
-
 
 /*STYLES FOR ABOUT US PAGE START*/
 
@@ -238,7 +251,7 @@ a.navbar-brand-override:hover{
     left:0;
     top: 0;
     z-index: -4;
-    letter-spacing: : 3px;
+    letter-spacing: 3px;
 }
 
 #front {
@@ -387,4 +400,3 @@ a.navbar-brand-override:hover{
     }
 }
 /*MEDIA QUERIES FOR SERVICES PAGE END*/
-

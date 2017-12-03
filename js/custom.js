@@ -6,7 +6,7 @@ $('.jcarousel')
         if (width > 300) {
             width = width / 2;
         } else if (width > 300) {
-            width = width / 1;
+            width = width / 3;
         }
 
         element.jcarousel('items').css('width', width + 'px');
@@ -25,6 +25,21 @@ $('.jcarousel').on('jcarousel:targetin', 'li', function(event, carousel)
                   var title = $(this).find('img').attr('title');
                   if(comment) $('.image-caption').html('<strong>'+title+'</strong> '+comment);
               });
+
+if (screen.width < 990) {
+   $(".stripe-box").insertAfter(".jcarousel-wrapper");
+}
+
+if (screen.width < 690) {
+   $(".stripe-box").hide();
+}
+
+
+
+
+
+
+
 
 
 
