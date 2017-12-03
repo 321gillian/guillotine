@@ -26,6 +26,7 @@ body {
     font-family: AUDIMSCL;
     background: #de1717;
     z-index: -3;
+    overflow-x: hidden;
 }
 
 
