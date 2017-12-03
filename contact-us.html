@@ -1,28 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <title>CONTACT</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/guillotine-styles.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <style type="text/css">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        body {
+            overflow-x: hidden;
+        }
+
+        #main-contact-content {
+            padding-top: 30px;
+        }
+
+        #services-background {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 75vh;
+            height: 90vw;
+        }
+
+        #map {
+            width: 400px;
+            height: 400px;
+            /* float: right; */
+        }
+
+        #contact-header {
+            margin-top: 30px;
+            color: #eee;
+            font-size: 28pt;
+        }
+
+        .radio-group>label {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #eee;
+            font-size: 16pt;
+        }
+
+        #contact-form {
+            background: #de1717;
+            /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(black, #de1717);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(black, #de1717);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(black, #de1717);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(black, #de1717);
+            /* Standard syntax */
+        }
+
+        .noPadding {
+            padding: 0px!important;
+        }
+
+        #contact-message-textarea {
+            width: 100%;
+        }
+
+        .submit-button {
+            border: 2px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16pt;
+        }
+
+        input.form-control,
+        select.form-control,
+        textarea.form-control {
+            background-color: #000;
+            color: #eee;
+            border-color: #444!important;
+            margin-bottom: 15px;
+        }
+
+        #contact-submit {
+            height: 0px;
+            margin-bottom: 0px;
+        }
+
+        textarea {
+            overflow-y: scroll;
+            resize: none;
+        }
+
+        .submit-button {
+            position: relative;
+            top: 15px;
+            left: 15px;
+            z-index: 100000;
+        }
+
+        #other-placeholder {
+            min-height: 500px;
+        }
+
+        .marginTop {
+            margin-top: 15px;
+        }
+
+        .marginBottom {
+            margin-bottom: 15px;
+        }
+
+        .contact-details {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .contact-details-text,
+        .contact-details-text-heading
+        {
+            color: #eee;
+            overflow: left;
+        }
+
+        .contact-details-inner {
+            position: relative;
+            transform: translateY(50%);
+        }
+    </style>
+
+    <!--
+            You need to include this script tag on any page that has a Google Map.
+
+            The following script tag will work when opening this example locally on your computer.
+            But if you use this on a localhost server or a live website you will need to include an API key.
+            Sign up for one here (it's free for small usage):
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+            After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
+        -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCuGG6PZxUVZNi0smTx_csZ9QIIMIjl44"></script>
+
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(53.2719178, -9.052818399999978),
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    }, {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    }, {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#dd4439"
+                        }]
+                    }, {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#dd4439"
+                        }, {
+                            "weight": 1.2
+                        }]
+                    }, {
+                        "featureType": "administrative.locality",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "lightness": "-1"
+                        }]
+                    }, {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "lightness": "0"
+                        }, {
+                            "saturation": "0"
+                        }]
+                    }, {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "weight": "0.01"
+                        }]
+                    }, {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "weight": "0.01"
+                        }]
+                    }, {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#dd4439"
+                        }]
+                    }, {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#dd4439"
+                        }]
+                    }, {
+                        "featureType": "road",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#99282f"
+                        }]
+                    }, {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                            "color": "#99282f"
+                        }]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#99282f"
+                        }]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#99282f"
+                        }]
+                    }, {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#99282f"
+                        }]
+                    }, {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#37110e"
+                        }]
+                    }
+                ]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            var blade = {
+                path: 'M 50,0 100,0 100,50 50,100 50,0 z',
+                fillColor: 'grey',
+                fillOpacity: 1,
+                scale: 0.3,
+                strokeColor: 'white',
+                strokeWeight: 1.5,
+                anchor: new google.maps.Point(50, 100),
+
+            };
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(53.2719178, -9.052818399999978),
+                icon: blade,
+                animation: google.maps.Animation.DROP,
+                map: map,
+                title: 'GUILLOTINE',
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+    <!--start of nav-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+
+
+            <!-- HEADER NAV BAR -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-override" href="#">GUILLOTINE</a>
+            </div>
+
+            <!-- header nav bar with tabs-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 main_nav">
+
+                <ul class="nav navbar-nav navbar-right navbar-right-override">
+                    <li class="nav_link">
+                        <a href="#">STORY</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--end of header nave with tabs-->
+
+    <div id="main-contact-content" class="container-fluid">
+        <svg id="services-background" viewBox="0 0 9.25 10" preserveAspectRatio="none">
+            <path d="M0,0 L10,0 L10,5 L0,10 z" fill="#e5e5e5" />
+        </svg>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12" id="contact-form">
+                <form class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="contact-header" class="text-center h1"> - CUT TO THE CHASE - </h4>
+                    <div class="row" id="radios">
+
+                        <!-- <div class="col-sm-12 noPadding"> -->
+                        <div class="form-group noPadding col-lg-6 col-md-6 col-sm-6 col-xs-6 radio-group">
+                            <label class="form-check-label radio-inline" id="radios">
+                                <input class="form-check-input" type="radio" name="season" value="individual" checked> INDIVIDUAL </label>
+                        </div>
+                        <div class="form-group noPadding col-lg-6 col-md-6 col-sm-6 col-xs-6 radio-group">
+                            <label class="form-check-label radio-inline" id="radios">
+                                <input class="form-check-input" type="radio" name="season" value="commercial"> COMMERCIAL </label>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <div id="contact-details" class="row form-group has-danger">
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="first-name" value="" placeholder="FIRST NAME" required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="last-name" value="" placeholder="LAST NAME" required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="email" name="email" value="" placeholder="EMAIL" required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="tel" name="contact-number" value="" placeholder="CONTACT NUMBER">
+                    </div>
+
+                    <div id="contact-category" class="row form-group has-danger">
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="subject" value="" placeholder="SUBJECT">
+                        <select class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" name="category">
+                            <option value="Unspecified" class="placeholder-option">CATEGORY</option>
+                            <option value="Category1">Category1</option>
+                            <option value="Category2">Category2</option>
+                            <option value="Category3">Category3</option>
+                        </select>
+                    </div>
+                    <div id="contact-message" class="row form-group has-danger">
+                        <textarea id="contact-message-textarea" class="form-control" name="message" rows="4" width="100%" placeholder="WRITE YOUR MESSAGE HERE..."></textarea>
+                    </div>
+                    <div id="contact-submit" class="row form-group has-danger">
+                        <a type="button" class="btn submit-button">SUBMIT</a>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 noPadding">
+                <svg viewBox="0 0 10 10" preserveAspectRatio="none">
+                    <path d="M0,0 L10,0 L0,4.5 z" fill="#de1717" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+        <div id="other-placeholder" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img class="img-responsive" src="img/storefront.png" alt="">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 row marginTop marginBottom noPadding">
+                <span class="hours-and-info-heading h5"><strong>OPENING HOURS</strong></span><br>
+                <span class="hours-and-info">MON | 10 - 6</span><br>
+                <span class="hours-and-info">TUE | 10 - 6</span><br>
+                <span class="hours-and-info">WED | 10 - 6</span><br>
+                <span class="hours-and-info">THU | 10 - 8</span><br>
+                <span class="hours-and-info">FRI |  9 - 8</span><br>
+                <span class="hours-and-info">SAT |  9 - 8</span><br>
+                <span class="hours-and-info">SUN | 12 - 4</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 row marginTop marginBottom noPadding">
+                <span class="hours-and-info-heading h5">HEAD STYLIIST</span><br>
+                <span class="hours-and-info">AVAILABLE ON</span><br>
+                <span class="hours-and-info">REQUEST</span><br>
+                <span class="hours-and-info"></span><br>
+                <span class="hours-and-info-heading">WALK-INS</span><br>
+                <span class="hours-and-info">CUTS &</span><br>
+                <span class="hours-and-info">BLOWDRYS</span><br>
+                <span class="hours-and-info">ONLY</span><br>
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 contact-details text-right noPadding">
+                <div class="contact-details-inner">
+                    <span class="contact-details-text">13 MIDDLE ST</span><br>
+                    <span class="contact-details-text">GALWAY CITY</span><br>
+                    <span class="contact-details-text">CO. GALWAY</span><br>
+                    <span class="contact-details-text">IRELAND</span><br><br>
+                    <span class="contact-details-text-heading">FOR RESERVATIONS, RING:</span><br>
+                    <span class="contact-details-text">091 522145</span><br><br>
+                    <span class="contact-details-text-heading">FOR SALON INQUIRIES, CONTACT:</span><br>
+                    <span class="contact-details-text">CHOP@GUILLOTINE.IE</span><br><br>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div id="map" class="float-lg-right float-md-right float-sm-right"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--start of sub footer-->
+    <div class="row sub_footer">
+        <!--phone icon-->
+      <div class="col-xs-12 col-sm-4 subfooter_col" >
+        <img src="./img/phone.svg" class= "footer_svg" alt:"phone"/>
+         091 522145</div>
+
+        <!--email icon-->
+        <div class="col-xs-12 col-sm-4 subfooter_col">
+          <img src="./img/email.svg" class="footer_svg" alt:"email"/>
+          CHOP@GUILLOTINE.IE
+        </div>
+        <!--address icon-->
+        <div class="col-xs-12 col-sm-4 subfooter_col">
+           <img src="./img/location.svg" class="footer_svg" alt:"location"/>
+           13 MIDDLE ST. GALWAY CITY. IRE</div>
+    </div>
+<!--end of sub footer-->
+    <!--start of footer-->
+      <div class="row" id="footerlink_logo">
+        <div class="col-xs-6">
+          <div class="footer-logo">
+            GUILLOTINE
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="footerlink">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">ABOUT US</a>
+              </li>
+              <li >
+                <a href="#">SERVICES</a>
+              </li>
+              <li>
+               <a href="#">CONTACT</a>
+              </li>
+              <li>
+                <a href="#">GALLERY</a>
+              </li>
+              <li>
+                <a href="#">JOBS</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!--end of footer-->
+</body>
+
+<script src="js/bootstrap.min.js" />
+
 </html>

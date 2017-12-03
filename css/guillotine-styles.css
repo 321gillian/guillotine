@@ -123,6 +123,7 @@ a.navbar-brand-override:hover{
 
 /* Small devices (tablets, 768px and below) */
 @media (max-width: 768px) {
+
     .subfooter_col{
         text-align: center;
         background-color: #0c0c0c;
@@ -131,6 +132,8 @@ a.navbar-brand-override:hover{
         text-align: center;
         visibility:hidden;
     }
+
+
 
     .main_logo{
         display: none;
