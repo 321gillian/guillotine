@@ -11,281 +11,10 @@
     <link rel="stylesheet" href="css/guillotine-styles.css">
 
     <style type="text/css">
-
         body {
             overflow-x: hidden;
         }
-
-        .filter {
-            filter: drop-shadow(0 2px 3px black);
-        }
-
-        #services-background.visible-lg.visible-md {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            min-height: 50vh;
-            max-height: 140vh;
-        }
-
-        #services-background.visible-sm {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            min-height: 55vh;
-            max-height: 95vh;
-        }
-
-        #services-background.visible-xs {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            min-height: 55vh;
-            max-height: 140vh;
-        }
-
-        #map {
-            width: 450px;
-            height: 450px;
-            /* float: right; */
-            margin-bottom: 60px;
-        }
-
-        #main-contact-content {
-            padding-top: 30px;
-        }
-
-        #services-background {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            min-height: 75vh;
-            height: 90vw;
-        }
-
-        #contact-header {
-            margin-top: 30px;
-            color: #eee;
-            font-size: 17pt;
-        }
-
-        .radio-group>label {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #eee;
-            font-size: 12pt;
-        }
-
-        #contact-form {
-            background: #de1717;
-            /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(black, #720c0c);
-            /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(black, #720c0c);
-            /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(black, #720c0c);
-            /* For Firefox 3.6 to 15 */
-            background: linear-gradient(black, #720c0c);
-            /* Standard syntax */
-        }
-
-        .noPadding {
-            padding: 0px!important;
-        }
-
-        #contact-message-textarea {
-            width: 100%;
-        }
-
-        .submit-button {
-            border: 2px solid #fff;
-            border-radius: 25px;
-            color: #fff;
-            font-size: 16pt;
-            background: transparent;
-        }
-
-        #contact-guillotine-blade {
-            height: fit-content;
-            width: 100%;
-        }
-
-        .mobile-section-divider {
-            height:18vh;
-        }
-
-        .haiL p,
-        .haiR p {
-            margin-bottom: 0px;
-        }
-
-        @media (max-width: 768px){
-            #branch-info {
-                color: #eee;
-                /* z-index: -100; */
-            }
-            .haiL p {
-                text-align: right;
-                padding-right: 0px;
-                white-space: pre;
-                /* margin-top: 15px; */
-            }
-            .haiR p {
-                text-align: left;
-                white-space: pre;
-                /* margin-top: 15px; */
-            }
-            #map {
-                width: 100%;
-                /* height: 90vw; */
-                /* float: right; */
-            }
-            .social-icons {
-                margin-bottom: 15px;
-            }
-        }
-
-        @media (max-width: 992px){
-            #branch-info {
-                color: #eee;
-                z-index: -100;
-            }
-
-            #storefront {
-                margin-right: auto;
-                margin-left: auto;
-            }
-
-            .haiL p {
-                text-align: right;
-                padding-right: 0px;
-                white-space: pre;
-                /* margin-top: 15px; */
-            }
-            .haiR p {
-                text-align: left;
-                white-space: pre;
-                /* margin-top: 15px; */
-            }
-            .social-icons {
-                margin-bottom: 30px;
-            }
-
-            #map {
-                width: 100%;
-                /* height: auto; */
-            }
-        }
-
-        @media (min-width: 992px){
-            .social-icons {
-                min-height: 100%;
-                position: relative;
-                top: 100%;
-                transform: translate(0%, 400%);
-            }
-
-            .contact-details-inner {
-                position: relative;
-                transform: translate(-5%, 65%);
-            }
-
-            .social-icons img {
-                width: 85%;
-                max-width: 80px;
-            }
-
-            #storefront {
-                width: 90%!important;
-            }
-
-            #map {
-                width: 100%;
-                /* height: auto; */
-            }
-        }
-
-        input.form-control,
-        select.form-control,
-        textarea.form-control {
-            background-color: #000;
-            color: #eee;
-            border-color: #444!important;
-            margin-bottom: 15px;
-        }
-
-        #contact-submit {
-            height: 0px;
-            margin-bottom: 0px;
-        }
-
-        textarea {
-            overflow-y: scroll;
-            resize: none;
-        }
-
-        .submit-button {
-            position: relative;
-            top: 15px;
-            left: 15px;
-            z-index: 100000;
-        }
-
-        #other-placeholder {
-            min-height: 500px;
-        }
-
-        .marginTop {
-            margin-top: 15px;
-        }
-
-        .marginBottom {
-            margin-bottom: 15px;
-        }
-
-        .contact-details {
-            position: relative;
-            bottom: 0px;
-        }
-
-        .contact-details-text,
-        .contact-details-text-heading
-        {
-            color: #eee;
-            overflow: left;
-        }
-
-
-        .contact-details-text-heading {
-            font-weight: bold;
-        }
-
-        ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-            background: transparent!important;
-        }
-
-        ::-webkit-scrollbar-button:start:decrement,
-        ::-webkit-scrollbar-button:end:increment  {
-            height: 10px;
-            background-color: transparent;
-        }
-        ::-webkit-scrollbar-track-piece  {
-            background-color: transparent;
-            -webkit-border-radius: 16px;
-        }
-        ::-webkit-scrollbar-thumb:vertical {
-            height: 10px;
-            background-color: #0e0e0e;
-            /* border-radius: 0px 0px 15px 0px; */
-        }
-
-        .hours-and-info-heading {
-            font-weight: bold;
-        }
-</style>
+    </style>
     <!--
             You need to include this script tag on any page that has a Google Map.
 
@@ -315,127 +44,125 @@
 
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{
-                            "color": "#ffffff"
-                        }]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    }, {
-                        "featureType": "all",
-                        "elementType": "labels.icon",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [{
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
 
-                            "color": "#de1717"
+                        "color": "#de1717"
 
-                        }]
-                    }, {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
 
-                            "color": "#de1717"
-                        }, {
-                            "weight": 1.2
-                        }]
+                        "color": "#de1717"
                     }, {
-                        "featureType": "administrative.locality",
-                        "elementType": "geometry.fill",
-                        "stylers": [{
-                            "lightness": "-1"
-                        }]
+                        "weight": 1.2
+                    }]
+                }, {
+                    "featureType": "administrative.locality",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "lightness": "-1"
+                    }]
+                }, {
+                    "featureType": "administrative.neighborhood",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "lightness": "0"
                     }, {
-                        "featureType": "administrative.neighborhood",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{
-                            "lightness": "0"
-                        }, {
-                            "saturation": "0"
-                        }]
-                    }, {
-                        "featureType": "administrative.neighborhood",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{
-                            "weight": "0.01"
-                        }]
-                    }, {
-                        "featureType": "administrative.land_parcel",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{
-                            "weight": "0.01"
-                        }]
-                    }, {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [{
+                        "saturation": "0"
+                    }]
+                }, {
+                    "featureType": "administrative.neighborhood",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "weight": "0.01"
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "weight": "0.01"
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
 
-                            "color": "#de1717"
+                        "color": "#de1717"
 
-                        }]
-                    }, {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [{
-                            "color": "#de1717"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#de1717"
 
-                        }]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{
-                            "visibility": "off"
-                        }]
-                    }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [{
-                            "color": "#99282f"
-                        }]
-                    }, {
-                        "featureType": "road.highway.controlled_access",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{
-                            "color": "#99282f"
-                        }]
-                    }, {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry",
-                        "stylers": [{
-                            "color": "#99282f"
-                        }]
-                    }, {
-                        "featureType": "road.local",
-                        "elementType": "geometry",
-                        "stylers": [{
-                            "color": "#99282f"
-                        }]
-                    }, {
-                        "featureType": "transit",
-                        "elementType": "geometry",
-                        "stylers": [{
-                            "color": "#99282f"
-                        }]
-                    }, {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [{
-                            "color": "#37110e"
-                        }]
-                    }
-                ]
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#99282f"
+                    }]
+                }, {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#99282f"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#99282f"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#99282f"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#99282f"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#37110e"
+                    }]
+                }]
             };
 
             // Get the HTML DOM element that will contain your map
@@ -486,20 +213,20 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand-override navbar-text" href="index.html">GUILLOTINE</a>
+                <a class="navbar-brand-override navbar-text" href="#">GUILLOTINE</a>
             </div>
 
             <!-- header nav bar with tabs-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right navbar-right-override">
                     <li class="nav_link">
-                        <a class="navbar-text" href="about-us.html">STORY</a>
+                        <a class="navbar-text" href="#">STORY</a>
                     </li>
                     <li class="nav_link">
-                        <a class="navbar-text" href="services.html">SERVICES</a>
+                        <a class="navbar-text" href="#">SERVICES</a>
                     </li>
                     <li class="nav_link">
-                        <a class="navbar-text" href="contact-us.html">CONTACT</a>
+                        <a class="navbar-text" href="#">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -539,15 +266,19 @@
                     </div>
 
                     <div id="contact-details" class="row form-group has-danger">
-                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="first-name" value="" placeholder="FIRST NAME" required>
-                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="last-name" value="" placeholder="LAST NAME" required>
-                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="email" name="email" value="" placeholder="EMAIL" required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="first-name" value="" placeholder="FIRST NAME"
+                            required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="last-name" value="" placeholder="LAST NAME"
+                            required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="email" name="email" value="" placeholder="EMAIL"
+                            required>
                         <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="tel" name="contact-number" value="" placeholder="CONTACT NUMBER">
                     </div>
 
                     <div id="contact-category" class="row form-group has-danger">
 
-                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="subject" value="" placeholder="SUBJECT" required>
+                        <input class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" name="subject" value="" placeholder="SUBJECT"
+                            required>
                         <select class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" name="category">
                             <option value="Unspecified" class="placeholder-option">CHOOSE A CATEGORY</option>
 
@@ -557,7 +288,8 @@
                         </select>
                     </div>
                     <div id="contact-message" class="row form-group has-danger">
-                        <textarea id="contact-message-textarea" class="form-control" name="message" rows="4" width="100%" placeholder="WRITE YOUR MESSAGE HERE..." required></textarea>
+                        <textarea id="contact-message-textarea" class="form-control" name="message" rows="4" width="100%" placeholder="WRITE YOUR MESSAGE HERE..."
+                            required></textarea>
                     </div>
                     <div id="contact-submit" class="row form-group has-danger">
                         <button type="submit" class="btn submit-button">SUBMIT</button>
@@ -590,28 +322,36 @@
                 <img id="storefront" class="img-responsive" src="img/storefront.png" alt="">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 marginTop marginBottom haiL">
-                <p class="hours-and-info-heading"><strong>OPENING HOURS</strong></p>
+                <p class="hours-and-info-heading">
+                    <strong>OPENING HOURS</strong>
+                </p>
                 <!-- <p class="hours-and-info">Mon | 10 - 6</p> -->
                 <p class="hours-and-info">Tue | 10 - 6</p>
                 <p class="hours-and-info">Wed | 10 - 6</p>
                 <p class="hours-and-info">Thu | 10 - 8</p>
-                <p class="hours-and-info">Fri |  9 - 8</p>
-                <p class="hours-and-info">Sat |  9 - 8</p>
+                <p class="hours-and-info">Fri | 9 - 8</p>
+                <p class="hours-and-info">Sat | 9 - 8</p>
                 <p class="hours-and-info">Sun | 12 - 4</p>
             </div>
             <div class="col-lg-3 col-md-3 hidden-sm hidden-xs marginTop marginBottom haiR">
-                <p class="hours-and-info-heading"><strong>WALK-INS</strong></p>
+                <p class="hours-and-info-heading">
+                    <strong>WALK-INS</strong>
+                </p>
                 <p class="hours-and-info">Cuts, Blowdrys</p>
                 <p class="hours-and-info">&</p>
                 <p class="hours-and-info">Treatments</p>
                 <p class="hours-and-info">Only</p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 marginTop marginBottom haiR">
-                <p class="hours-and-info-heading"><strong>HEAD STYLIIST</strong></p>
+                <p class="hours-and-info-heading">
+                    <strong>HEAD STYLIIST</strong>
+                </p>
                 <p class="hours-and-info">Available on</p>
                 <p class="hours-and-info">Request</p>
                 <p class="hours-and-info hidden-md hidden-lg">—</p>
-                <p class="hours-and-info-heading hidden-md hidden-lg"><strong>WALK-INS</strong></p>
+                <p class="hours-and-info-heading hidden-md hidden-lg">
+                    <strong>WALK-INS</strong>
+                </p>
                 <p class="hours-and-info hidden-md hidden-lg">Cuts &</p>
                 <p class="hours-and-info hidden-md hidden-lg">Blowdrys</p>
                 <p class="hours-and-info hidden-md hidden-lg">Only</p>
@@ -621,27 +361,44 @@
         <div id="contact-details-outer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 social-icons">
                 <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
-                    <a href="#"><img src="img/facebook.svg" alt="facebook logo icon"></a>
+                    <a href="#">
+                        <img src="img/facebook.svg" alt="facebook logo icon">
+                    </a>
                 </div>
                 <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2">
-                    <a href="#"><img src="img/twitter.svg" alt="twitter logo icon"></a>
+                    <a href="#">
+                        <img src="img/twitter.svg" alt="twitter logo icon">
+                    </a>
                 </div>
                 <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2">
-                    <a href="#"><img src="img/instagram.svg" alt="instagram logo icon"></a>
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="instagram logo icon">
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 hidden-sm hidden-xs contact-details text-right noPadding">
 
                 <div class="contact-details-inner">
-                    <span class="contact-details-text">13 MIDDLE ST</span><br>
-                    <span class="contact-details-text">GALWAY CITY</span><br>
-                    <span class="contact-details-text">CO. GALWAY</span><br>
-                    <span class="contact-details-text">IRELAND</span><br><br>
-                    <span class="contact-details-text-heading">FOR RESERVATIONS, CALL:</span><br>
+                    <span class="contact-details-text">13 MIDDLE ST</span>
+                    <br>
+                    <span class="contact-details-text">GALWAY CITY</span>
+                    <br>
+                    <span class="contact-details-text">CO. GALWAY</span>
+                    <br>
+                    <span class="contact-details-text">IRELAND</span>
+                    <br>
+                    <br>
+                    <span class="contact-details-text-heading">FOR RESERVATIONS, CALL:</span>
+                    <br>
 
-                    <span class="contact-details-text">091 522145</span><br><br>
-                    <span class="contact-details-text-heading">FOR SALON INQUIRIES, CONTACT:</span><br>
-                    <span class="contact-details-text">CHOP@GUILLOTINE.IE</span><br><br>
+                    <span class="contact-details-text">091 522145</span>
+                    <br>
+                    <br>
+                    <span class="contact-details-text-heading">FOR SALON INQUIRIES, CONTACT:</span>
+                    <br>
+                    <span class="contact-details-text">CHOP@GUILLOTINE.IE</span>
+                    <br>
+                    <br>
                 </div>
             </div>
 
@@ -656,56 +413,53 @@
     <div class="row sub_footer">
         <!--phone icon-->
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col" >
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
 
-        <img src="./img/phone.svg" class= "footer_svg" alt:"phone"/>
-         091 522145</div>
+            <img src="./img/phone.svg" class="footer_svg" alt: "phone"/> 091 522145</div>
 
         <!--email icon-->
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
 
-          <img src="./img/email.svg" class="footer_svg" alt:"email"/>
-          CHOP@GUILLOTINE.IE
+            <img src="./img/email.svg" class="footer_svg" alt: "email"/> CHOP@GUILLOTINE.IE
         </div>
         <!--address icon-->
 
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
-           <img src="./img/location.svg" class="footer_svg" alt:"location"/>
-           13 MIDDLE ST. GALWAY CITY, IRE</div>
+            <img src="./img/location.svg" class="footer_svg" alt: "location"/> 13 MIDDLE ST. GALWAY CITY, IRE</div>
     </div>
-<!--end of sub footer-->
+    <!--end of sub footer-->
     <!--start of footer-->
-      <div class="row hidden-sm hidden-xs" id="footerlink_logo">
+    <div class="row hidden-sm hidden-xs" id="footerlink_logo">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-          <div class="footer-logo">
-            GUILLOTINE
-          </div>
+            <div class="footer-logo">
+                GUILLOTINE
+            </div>
         </div>
 
         <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
 
-          <div class="footerlink">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="about-us.html">ABOUT US</a>
-              </li>
-              <li >
-                <a href="services.html">SERVICES</a>
-              </li>
-              <li>
-                <a href="contact-us.html">CONTACT</a>
-              </li>
-              <li>
-                <a href="#">GALLERY</a>
-              </li>
-              <li>
-                <a href="#">JOBS</a>
-              </li>
-            </ul>
-          </div>
-      </div>
+            <div class="footerlink">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#">JOBS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!--end of footer-->
 </body>
