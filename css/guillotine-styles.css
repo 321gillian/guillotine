@@ -2,8 +2,8 @@
 /* fonts*/
 
 @font-face {
-	font-family: Ailerons;
-	src:url('../fonts/Ailerons-Typeface.otf');
+    font-family: Ailerons;
+    src:url('../fonts/Ailerons-Typeface.otf');
 }
 
 @font-face {
@@ -14,6 +14,7 @@
 @font-face{
     font-family:AUDIMSCL;
     src:url('../fonts/AUDIMSCL.ttf');
+<<<<<<< HEAD
     font-weight: lighter;
 }
 
@@ -21,10 +22,12 @@
     font-family:AUDIMSCL;
     src:url('../fonts/AUDIMSCB.ttf');
     font-weight: bold;
+=======
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 }
 
 body{
-	font-family: AUDIMSCL;
+    font-family: AUDIMSCL;
     background: #de1717;
     z-index: -3;
 }
@@ -32,33 +35,78 @@ body{
 
 /* nav bar css */
 
+.main_logo{
+    color:#de1717;
+    font-size: 3em;
+    margin: 0.8em;
+    letter-spacing: 0.2em;
+    font-family: Ailerons;
+    width: 1em;
+    word-wrap: break-word;
+    float:left;
+    display: block;
+}
+
+.logo-row {
+    background: #de1717;
+    padding-top: 4em;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 4em;
+    align-content: center;
+    max-width: 200px;
+}
 
 .navbar-default{
-	color:#0c0c0c ;
+    color:#0c0c0c ;
     background-color: #e5e5e5;
 }
 
 .navbar-right{
+<<<<<<< HEAD
     font-family:AUDIMSCL;
     line-height: 26pt;
+=======
+    font-family: AUDIMSCL;
+    font-weight: bold;
+
+
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 }
 
 .navbar-brand-override{
+<<<<<<< HEAD
 	color:#de1717!important;
 	font-size: 26pt!important;
 	margin: 0.8em;
 	letter-spacing: 0.2em;
+=======
+    color:#de1717;
+    font-size: 4em;
+    margin: 0.8em;
+    letter-spacing: 0.2em;
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
     font-family: Ailerons;
 }
 
 a.navbar-brand-override:hover{
+<<<<<<< HEAD
 	color:#de1717;
 	text-decoration: none;
+=======
+    color:#de1717;
+    text-decoration: none;
+
+
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 }
 .navbar-nav>li>a:hover{
-	color: #e5e5e5;
-	background-color: #0c0c0c;
+    color: #e5e5e5;
+    background-color: #0c0c0c;
 }
+
 
 .navbar li a, .navbar {
   color: #0c0c0c !important;
@@ -71,6 +119,7 @@ a.navbar-brand-override:hover{
 }
 
 .navbar-right{
+<<<<<<< HEAD
 	color:#e5e5e5;
 	display:inline-block;
 	margin:9px;
@@ -84,55 +133,97 @@ a.navbar-brand-override:hover{
 	margin-left: 12px;
     margin-top: 6px;
 	font-size: 30pt;
+=======
+    color:#e5e5e5;
+    display:inline-block;
+    margin:9px;
+    font-size: 2em;
+}
+
+.footer-logo{
+    color:#de1717;
+    display:inline-block;
+    margin:0.01em;
+    font-size: 3em;
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
     font-family: Ailerons;
 }
 .sub_footer{
-	color:#e5e5e5;
-	background-color: #0c0c0c;
+    color:#e5e5e5;
+    background-color: #0c0c0c;
 }
 
 #footerlink_logo{
-	background-color: #0c0c0c;
+    background-color: #0c0c0c;
 }
 
 .footerlink li > a{
-	color:#e5e5e5;
-	background-color: #0c0c0c;
-	font-size: 0.5em;
+    color:#e5e5e5;
+    background-color: #0c0c0c;
+    font-size: 0.5em;
 }
 .footer_svg{
-		width: 2em;
-		margin-right: 0.5em;
+        width: 2em;
+        margin-right: 0.5em;
 }
 
 .subfooter_col{
+<<<<<<< HEAD
 	text-align: center;
 	/*border-width: 0.1em;*/
 	border: 1px solid #333;
 	padding: 1em;
 	font-size: 1em;
+=======
+    text-align: center;
+    /*border-width: 0.1em;*/
+    border: 1px solid white;
+    padding: 1em;
+    font-size: 1em;
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 }
 
 /* Small devices (tablets, 768px and below) */
 @media (max-width: 768px) {
-	.subfooter_col{
-		text-align: center;
-		background-color: #0c0c0c;
-	}
-	#footerlink_logo{
-		text-align: center;
-		visibility:hidden;
-	}
+
+    .subfooter_col{
+        text-align: center;
+        background-color: #0c0c0c;
+    }
+    #footerlink_logo{
+        text-align: center;
+        visibility:hidden;
+    }
+
+
+<<<<<<< HEAD
+=======
+
+    .main_logo{
+        display: none;
+
+    }
+    .navbar-brand-override{
+        color:#de1717;
+        font-size: 2em;
+        margin: 0.8em;
+        font-family: Ailerons;
+    }
+
 }
 
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 /* Medium devices (tablet, 768px and up) */
 @media (min-width: 768px) {
-	.subfooter_col{
-		color: #e5e5e5;
-	}
+    .subfooter_col{
+        color: #e5e5e5;
+    }
 }
 
 /*STYLES FOR ABOUT US PAGE START*/
+.mt-1 {
+  margin-top: 2.5%;
+}
 
 .mt-2 {
   margin-top: 5%;
@@ -142,35 +233,34 @@ a.navbar-brand-override:hover{
   margin-top: 10%;
 }
 
-.logo {
-    height: 100px;
-    align-content: center;
-}
-
-.spacer {
-    min-height: 450px;
-}
-
 .about-title {
     font-size: 60pt;
     text-transform: uppercase;
     color:#de1717;
+    padding-top: 15px;
     margin-left: 20px;
     line-height: 60pt;
-    margin-top: -30px;
-      -ms-transform: skewX(-8deg); /* IE */
+    margin-top: 100px;
+    -ms-transform: skewX(-8deg); /* IE */
     -webkit-transform: skewX(-8deg); /* Safari */
     transform: skewX(-8deg); /* Standard syntax */
+    z-index: 5;
 }
 
+
 .about-desc {
-    margin-top: 175px;
+    margin-top: 5px;
     margin-left: 10px;
-    width: 460px !important;
+    width: 400px;
     font-family: AUDIMSCL;
     font-variant: small-caps;
     font-size: 18pt;
     line-height: 18pt;
+    z-index: 5 !important;
+    vertical-align: bottom;
+    text-align: left;
+    left: 0px;
+    position: relative;
 }
 
 #about-background {
@@ -182,34 +272,23 @@ a.navbar-brand-override:hover{
     z-index: -2;
 }
 
-
 #triangle-bottomleft {
    width: 0px;
    height: 0px;
-   left: 0;
-   margin-top: -20px;
+   margin-left: 0px;
    border-bottom: 450px solid #e5e5e5;
    border-right: 600px solid transparent;
    position: absolute;
-}
-
-#triangle-bottomleft p, h1 {
-    vertical-align: bottom;
-    text-align: left;
-    top: 100px;
-    left: 0px;
-    position: relative;
-    width: 250px;
-    height: 70px;
-    padding: 10px;
+   z-index: 0;
 }
 
 #about-banner {
     height: 450px;
-    margin-top: -20px;
-    left: 0;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -470px;
+    z-index: 0;
 }
-
 .staff-row {
     margin-top: 2em;
     margin-left: 0.5em;
@@ -232,8 +311,8 @@ a.navbar-brand-override:hover{
     font-variant: small-caps;
     font-size: 18pt;
     line-height: 18pt;
-
 }
+
 
 /*STYLES FOR ABOUT US PAGE END*/
 
@@ -251,7 +330,10 @@ a.navbar-brand-override:hover{
     left:0;
     top: 0;
     z-index: -4;
+<<<<<<< HEAD
     letter-spacing: 3px;
+=======
+>>>>>>> 67cf4727d103e97a827154947d8e68fa38ee9007
 }
 
 #front {
@@ -269,9 +351,6 @@ a.navbar-brand-override:hover{
     letter-spacing: 10px;
 }
 
-.section-2 {
-    padding-left: 5%;
-}
 
 .services-section-heading {
     font-size: 22pt;
@@ -291,13 +370,8 @@ a.navbar-brand-override:hover{
 
 .services-guidelines {
     text-align: right;
-<<<<<<< HEAD
-    margin: -240px 30px 40px 0px;
-    font-family: Audimat;
-=======
     margin: -240px 30px 50px 0px;
     font-family: AUDIMSCL;
->>>>>>> 4a928244a765a83a0c08122b98539af8cafa3d76
 }
 
 .services-guidelines h3 {
@@ -346,57 +420,87 @@ a.navbar-brand-override:hover{
 
 
 /*MEDIA QUERIES FOR ABOUT US PAGE START*/
-@media screen and (max-width: 960px) {
-    #about-banner {
-    position: absolute;
-    top: 0px;
-    clip: rect(0px,390px,450px,0px);
-    z-index: -1;
 
-    }
-}
-
-@media screen and (min-width: 980px) {
-    #about-banner {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    z-index: -1;
-
-    }
-}
 
 @media screen and (max-width: 990px) {
-    p {
-    padding-right: 20%;
+    .white-first
+    {
+        color: white !important;
     }
 }
+
+@media screen and (max-width: 765px) {
+    .staff-item {
+        text-align: center;
+        padding: 0, 0, 20%, 20%;
+        display: block;
+    }
+
+    .img-staff {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .white-second
+    {
+        color: white !important;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    #triangle-bottomleft {
+        opacity: 0;
+        border-right: 0px;
+    }
+
+    .about-desc, .about-title {
+        color: white;
+    }
+    .about-desc {
+        width: 80%;
+        background-color: #000;
+        margin-bottom: 50px;
+    }
+    .about-title {
+           margin-top: 80px;
+    }
+}
+
 /*MEDIA QUERIES FOR ABOUT US PAGE END*/
 
 /*MEDIA QUERIES FOR SERVICES PAGE START*/
-@media screen and (max-width: 960px) {
-    #about-banner {
-    position: absolute;
-    top: 0px;
-    clip: rect(0px,390px,450px,0px);
-    z-index: -1;
-
-    }
-}
-
-@media screen and (min-width: 980px) {
-    #about-banner {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    z-index: -1;
-
-    }
-}
 
 @media screen and (max-width: 990px) {
-    p {
-    padding-right: 20%;
+.logo {
+
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
     }
+
+.services-guidelines {
+    text-align: left;
+    margin: 1em auto;
 }
+.services-guidelines p {
+    margin-left: -40px;
+}
+
+.stripe-box {
+    margin-top: 30px;
+    padding: 0;
+    float: left;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+.white-frame {
+    margin-top: 1em;
+}
+
+
 /*MEDIA QUERIES FOR SERVICES PAGE END*/
