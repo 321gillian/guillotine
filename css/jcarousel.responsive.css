@@ -88,15 +88,14 @@
 @media screen and (max-width: 700px) {
     #polaroid {
         opacity: 0;
+        width: 0;
     }
     .jcarousel-control-prev {
         margin-left: -150px;
-        color: #fff;
     }
 
     .jcarousel-control-next{
         margin-left: -160px;
-        color: #fff;
     }
 
     .gallery-text {
@@ -104,8 +103,15 @@
     }
     .jcarousel {
         position: relative;
-        max-width: 50%;
+        overflow: hidden;
+        width: 300px;
     }
+     .jcarousel li {
+        position: relative;
+        width: 100px;
+    }
+
+
     .white-frame {
         background-color: #fff;
         width: 360px;

@@ -30,6 +30,10 @@ if (screen.width < 990) {
    $(".stripe-box").insertAfter(".jcarousel-wrapper");
 }
 
+if (screen.width < 690) {
+   $(".stripe-box").hide();
+}
+
 
 
 
