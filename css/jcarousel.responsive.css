@@ -1,10 +1,10 @@
-
+/* Styles for the polaroid behind the gallery on desktop / tablet */
 #polaroid {
     position: relative;
     z-index: -2;
 }
 
-
+/* Style for the carousel wrapper */
 .jcarousel-wrapper {
     top: 0;
     position: absolute;
@@ -13,8 +13,7 @@
     box-shadow: 0 0 0px #999;
 }
 
-/** Carousel **/
-
+/* Styles for carousel on desktop*/
 .jcarousel {
     margin-left: 25px;
     position: relative;
@@ -46,7 +45,7 @@
     height: auto !important;
 }
 
-/** Carousel Controls **/
+/* Styles for carousel controls*/
 
 .jcarousel-control-prev,
 .jcarousel-control-next {
@@ -60,10 +59,12 @@
     font-size: 22pt;
 }
 
+/* Desktop position for back button */
 .jcarousel-control-prev {
     left: 200px;
 }
 
+/* Styling and desktop position for gallery title */
 .gallery-text {
     left: 250px;
     font-weight: bold;
@@ -79,39 +80,41 @@
 }
 
 
+/* Desktop position for next button */
 .jcarousel-control-next {
     left: 440px;
 }
 
 
+/* START OF GALLERY MEDIA QUERIES*/
 /* Media Query */
 @media screen and (max-width: 700px) {
+    /*Hides the polaroid on mobile*/
     #polaroid {
         opacity: 0;
         width: 0;
     }
+
+     /* Sets mobile position for back button*/
     .jcarousel-control-prev {
         margin-left: -150px;
     }
 
+     /* Sets the mobile position for next button on mobile */
     .jcarousel-control-next{
         margin-left: -160px;
     }
 
+     /* Sets the mobile position for gallery title on mobile */
     .gallery-text {
         margin-left: -160px;
     }
+
+     /* Reduces width of carousel on mobile */
     .jcarousel {
-        position: relative;
-        overflow: hidden;
         width: 300px;
     }
-     .jcarousel li {
-        position: relative;
-        width: 100px;
-    }
-
-
+     /* Styles for the white-frame mobile replacement for polaroid */
     .white-frame {
         background-color: #fff;
         width: 360px;
@@ -120,10 +123,5 @@
     }
 }
 
-
-@media screen and (max-width: 410px) {
-#gallery-title {
-    padding-left: 15%;
-}
 
 
