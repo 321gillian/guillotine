@@ -23,36 +23,45 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-       <!-- HEADER NAV BAR -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand-override" href="index.html">GUILLOTINE</a>
-      </div>
+     <!-- HEADER NAV BAR -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-        <!-- header nav bar with tabs-->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <a class="navbar-brand-override navbar-text" href="index.html">GUILLOTINE</a>
+            </div>
 
-          <ul class="nav navbar-nav navbar-right navbar-right-override">
-            <li class="nav_link"><a href="about-us.html">STORY</a></li>
-            <li class="nav_link"><a href="services.html">SERVICES</a></li>
-            <li class="nav_link"><a href="contact-us.html">CONTACT</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+            <!-- header nav bar with tabs-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right navbar-right-override">
+                    <li class="nav_link">
+                        <a class="navbar-text" href="about-us.html">STORY</a>
+                    </li>
+                    <li class="nav_link">
+                        <a class="navbar-text" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav_link">
+                        <a class="navbar-text" href="contact-us.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
-<!--end of header nave with tabs-->
+    <!--end of header nav with tabs-->
 
 <!--Main Content Starts-->
  <!--background shape starts-->
- <div class="container">
+ <div class="container-fluid row mt-1">
 
   <svg id="services-background" viewBox="0 0 10 10" preserveAspectRatio="none">
-    <path d="M0,0 L15,0 L0,10 z" fill="#e5e5e5" /></path>
+    <path d="M0,0 L12,0 L0,10 z" fill="#e5e5e5" /></path>
 </svg></div>
 <!--background shape ends-->
 
@@ -198,53 +207,50 @@ do-over, it’s important to us that you’re happy.</p>
     <!--start of sub footer-->
     <div class="row sub_footer">
         <!--phone icon-->
-      <div class="col-xs-12 col-sm-4 subfooter_col" >
-        <img src="./img/phone.svg" class= "footer_svg" alt:"phone"/>
-         091 522145</div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
+
+            <img src="./img/phone.svg" class="footer_svg" alt: "phone"/> 091 522145</div>
 
         <!--email icon-->
-        <div class="col-xs-12 col-sm-4 subfooter_col">
-          <img src="./img/email.svg" class="footer_svg" alt:"email"/>
-          CHOP@GUILLOTINE.IE
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
+
+            <img src="./img/email.svg" class="footer_svg" alt: "email"/> CHOP@GUILLOTINE.IE
         </div>
         <!--address icon-->
-        <div class="col-xs-12 col-sm-4 subfooter_col">
-           <img src="./img/location.svg" class="footer_svg" alt:"location"/>
-           13 MIDDLE ST. GALWAY CITY. IRE</div>
-    </div>
-<!--end of sub footer-->
 
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 subfooter_col">
+            <img src="./img/location.svg" class="footer_svg" alt: "location"/> 13 MIDDLE ST. GALWAY CITY, IRE</div>
+    </div>
+    <!--end of sub footer-->
     <!--start of footer-->
-      <div class="row" id="footerlink_logo">
-        <div class="col-xs-6">
-          <div class="footer-logo">
-            GUILLOTINE
-          </div>
+    <div class="row hidden-sm hidden-xs" id="footerlink_logo">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="footer-logo">
+                GUILLOTINE
+            </div>
         </div>
 
-        <div class="col-xs-6">
-          <div class="footerlink">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="about-us.html">ABOUT US</a>
-              </li>
-              <li >
-                <a href="services.html">SERVICES</a>
-              </li>
-              <li>
-                <a href="contact-us.html">CONTACT</a>
-              </li>
-              <li>
-                <a href="#">GALLERY</a>
-              </li>
-              <li>
-                <a href="#">JOBS</a>
-              </li>
-            </ul>
-          </div>
-      </div>
+        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+
+            <div class="footerlink">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about-us.html">STORY</a>
+                    </li>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <!--end of footer-->
+    <!--end of footer--
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
