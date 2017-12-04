@@ -195,6 +195,7 @@ a.navbar-brand-override:hover {
 }
 
 .about-title {
+    max-width: 100vw;
     font-size: 50pt;
     text-transform: uppercase;
     color: #de1717;
@@ -229,7 +230,7 @@ a.navbar-brand-override:hover {
 #about-background {
     position: absolute;
     width: 100%;
-    height: 1390px;
+    height: 1300px;
     left: 0;
     top: 0;
     z-index: -2;
@@ -249,8 +250,13 @@ a.navbar-brand-override:hover {
     height: 450px;
     width: 100%;
     object-fit: cover;
-    margin-top: -470px;
+    margin-top: -475px;
     z-index: 0;
+}
+
+#banner-inner-container{
+    margin-right: 0px;
+    padding-right: 0px;
 }
 
 .staff-row {
@@ -396,7 +402,7 @@ a.navbar-brand-override:hover {
         margin: 0 auto;
     }
     .white-second {
-        color: white !important;
+        color: white!important;
     }
 }
 
@@ -415,7 +421,7 @@ a.navbar-brand-override:hover {
         margin-bottom: 50px;
     }
     .about-title {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 }
 
@@ -487,7 +493,7 @@ a.navbar-brand-override:hover {
     bottom: 0;
     width: 100%;
     min-height: 55vh;
-    max-height: 140vh;
+    max-height: 170vh;
 }
 
 #map {
@@ -636,6 +642,7 @@ a.navbar-brand-override:hover {
     .social-icons img {
         width: 100%;
         max-width: 60px;
+        padding-top: 8px;
     }
     #storefront {
         width: 90%!important;
