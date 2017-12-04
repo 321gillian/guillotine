@@ -138,6 +138,11 @@ a.navbar-brand-override:hover {
     font-size: 0.5em;
 }
 
+.subfooter_link, .subfooter_link:hover {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
 .footer_svg {
     width: 2em;
     margin-right: 0.5em;
