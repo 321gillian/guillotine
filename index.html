@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Guillotine - Hair Salon</title>
+    <title>GUILLOTINE | HOME</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--Custom styles-->
     <link href="css/guillotine-styles.css" rel="stylesheet">
-    <link href="css/guillotine-styles-index.css" rel="stylesheet">
+    <!-- <link href="css/guillotine-styles-index.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/carousel.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,47 +20,46 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<body id="index">
+  <!--start of nav-->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
-<body>
-    <!-- <svg id="services-background" viewBox="0 0 10 10" preserveAspectRatio="none">
-        <path d="M0,0 L14,0 L0,10 z" fill="#e5e5e5" />
-    </svg> -->
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+          <!-- HEADER NAV BAR -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
 
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <!-- HEADER NAV BAR -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="navbar-brand-override" href="#">GUILLOTINE</div>
-                <div class="main_logo">GUILLOTINE</div>
+              <a class="navbar-brand-override navbar-text" href="./index.html">GUILLOTINE</a>
+              <div class="main_logo">GUILLOTINE</div>
+          </div>
 
-            </div>
-            <!-- header nav bar with tabs-->
-            <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="nav navbar-nav navbar-right navbar-right-override">
-                    <li class="nav_link">
-                        <a href="#">STORY</a>
-                    </li>
-                    <li class="nav_link">
-                        <a href="#">SERVICES</a>
-                    </li>
-                    <li class="nav_link">
-                        <a href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!--end of header nave with tabs-->
+          <!-- header nav bar with tabs-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right navbar-right-override">
+                  <li class="nav_link">
+                      <a class="navbar-text" href="./about-us.html">STORY</a>
+                  </li>
+                  <li class="nav_link">
+                      <a class="navbar-text" href="./services.html">SERVICES</a>
+                  </li>
+                  <li class="nav_link">
+                      <a class="navbar-text" href="./contact-us.html">CONTACT</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+  <!--end of header nav with tabs-->
 
     <!--start of main content panel-->
     <div class="container-fluid row">
@@ -72,21 +71,21 @@
             <div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12 text-right">
                 <h1>FOR<br>STYLE<br>ON THE<br>CUTTING EDGE</h1>
                 <p id="subblurb">MODERN | CREATIVE | OFFBEAT</p>
-                <p id="blurbdesc">Guillotine offers a peerless hairdressing<br>experience for men and women alike, a troop<br>of enthusiastic & dedicated staff,<br>and the best espresso in town!</p>
+                <p class="hidden-sm hidden-xs blurbdesc">Guillotine offers a peerless hairdressing<br>experience for men and women alike, a troop<br>of enthusiastic & dedicated staff,<br>and the best espresso in town!</p>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blurb-socials">
-                    <a href="#">
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+                <div class="col-lg-12 col-md-12 blurb-socials">
+                    <a href="https://www.facebook.com/SassoonAcademy/">
                         <img src="img/facebook.svg" alt="facebook logo icon">
                     </a>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blurb-socials">
-                    <a href="#">
+                <div class="col-lg-12 col-md-12 blurb-socials">
+                    <a href="https://www.instagram.com/mysassoonhair/">
                         <img src="img/twitter.svg" alt="twitter logo icon">
                     </a>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blurb-socials">
-                    <a href="#">
+                <div class="col-lg-12 col-md-12 blurb-socials">
+                    <a href="https://twitter.com/SassoonAcademy">
                         <img src="img/instagram.svg" alt="instagram logo icon">
                     </a>
                 </div>
@@ -132,6 +131,24 @@
 
             </div>
             <!-- end of carousel -->
+            <p class="hidden-lg hidden-md blurbdesc">Guillotine offers a peerless hairdressing<br>experience for men and women alike, a troop<br>of enthusiastic & dedicated staff,<br>and the best espresso in town!</p>
+            <div class="col-lg-12 col-md-12 hidden-lg hidden-md">
+                <div class="col-sm-2 col-sm-offset-3 col-xs-4 blurb-socials">
+                    <a href="#">
+                        <img src="img/facebook.svg" alt="facebook logo icon">
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-4 blurb-socials">
+                    <a href="#">
+                        <img src="img/twitter.svg" alt="twitter logo icon">
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-4 blurb-socials">
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="instagram logo icon">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div id="testimonial-section" class="container-fluid row">
@@ -149,19 +166,16 @@
     <!--end of main content panel-->
 
     <!--Three logo row starts-->
-    <div class="container-fluid" co>
-        <div class="row logo-row mt-2">
-            <div class="col-xs-0 col-md-2"></div>
-            <div class="col-xs-12 col-md-2">
-                <img class="logo" src="img/logos/IHBA.png">
+    <div class="container-fluid">
+        <div class="row logo-row">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-2">
+                <img class="logo img-responsive" src="img/logos/IHBA.png">
             </div>
-            <div class="col-xs-0 col-md-1"></div>
-            <div class="col-xs-12 col-md-2">
-                <img class="logo" src="img/logos/SASSOON.png">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-1">
+                <img class="logo img-responsive" src="img/logos/SASSOON.png">
             </div>
-            <div class="col-xs-0 col-md-1"></div>
-            <div class="col-xs-12 col-md-2">
-                <img class="logo" src="img/logos/IHF.png">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0 col-md-2 col-md-offset-1">
+                <img class="logo img-responsive" src="img/logos/IHF.png">
             </div>
             <div class="col-xs-0 col-md-2"></div>
         </div>
@@ -180,34 +194,28 @@
         </div>
         <!--address icon-->
         <div class="col-xs-12 col-sm-4 subfooter_col">
-            <img src="./img/location.svg" class="footer_svg" alt: "location"/> 13 MIDDLE ST. GALWAY CITY. IRE</div>
+            <img src="./img/location.svg" class="footer_svg" alt: "location"/> 13 MIDDLE ST. GALWAY CITY</div>
     </div>
     <!--end of sub footer-->
 
     <!--start of footer-->
     <div class="row" id="footerlink_logo">
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="footer-logo">
                 GUILLOTINE
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="hidden-xs hidden-sm col-md-6 col-lg-6">
             <div class="footerlink">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">ABOUT US</a>
+                        <a href="./about-us.html">STORY</a>
                     </li>
                     <li>
-                        <a href="#">SERVICES</a>
+                        <a href="./services.html">SERVICES</a>
                     </li>
                     <li>
-                        <a href="#">CONTACT</a>
-                    </li>
-                    <li>
-                        <a href="#">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="#">JOBS</a>
+                        <a href="./contact-us.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -216,11 +224,9 @@
     <!--end of footer-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/carousel.js"></script>
 
