@@ -46,6 +46,8 @@ body {
 
 .logo-row {
     background: #de1717;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -134,6 +136,11 @@ a.navbar-brand-override:hover {
     color: #e5e5e5;
     background-color: #0c0c0c;
     font-size: 0.5em;
+}
+
+.subfooter_link, .subfooter_link:hover {
+    color: #e5e5e5;
+    text-decoration: none;
 }
 
 .footer_svg {
