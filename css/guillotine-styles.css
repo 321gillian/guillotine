@@ -130,6 +130,8 @@ a.navbar-brand-override:hover {
 
 #footerlink_logo {
     background-color: #0c0c0c;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footerlink li>a {
