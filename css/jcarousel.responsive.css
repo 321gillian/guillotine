@@ -97,28 +97,30 @@
 
      /* Sets mobile position for back button*/
     .jcarousel-control-prev {
-        margin-left: -150px;
+        margin-left: -185px;
     }
 
      /* Sets the mobile position for next button on mobile */
     .jcarousel-control-next{
-        margin-left: -160px;
+        margin-left: -200px;
     }
 
      /* Sets the mobile position for gallery title on mobile */
     .gallery-text {
-        margin-left: -160px;
+        margin-left: -195px;
     }
 
      /* Reduces width of carousel on mobile */
     .jcarousel {
-        width: 300px;
+        width: 240px;
+        margin-left: 20px;
     }
      /* Styles for the white-frame mobile replacement for polaroid */
     .white-frame {
         background-color: #fff;
-        width: 360px;
-        max-height: 290px;
+        width: 280px;
+        max-height: 250px;
+        margin-left: 10px;
 
     }
 }
