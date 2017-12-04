@@ -46,6 +46,8 @@ body {
 
 .logo-row {
     background: #de1717;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
