@@ -671,14 +671,6 @@ textarea.form-control {
     color: #eee;
     border-color: #444!important;
     margin-bottom: 15px;
-    -ms-transform: skewX(-8deg);
-    /* IE */
-    -webkit-transform: skewX(-8deg);
-    /* Safari */
-    transform: skewX(-8deg);
-    /* Standard syntax */
-    text-transform:
-
 }
 
 #contact-submit {
