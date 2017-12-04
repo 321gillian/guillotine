@@ -46,13 +46,12 @@ body {
 
 .logo-row {
     background: #de1717;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .logo {
     height: 100px;
-    margin-bottom: 4em;
     align-content: center;
     max-width: 200px;
 }
@@ -66,12 +65,13 @@ body {
 .navbar-right {
     font-family: AUDIMSCL;
     line-height: 26pt;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .navbar-brand-override {
     color: #de1717!important;
     font-size: 25pt;
+    margin-top: 23pt;
     margin-left: 15px;
     letter-spacing: 2pt;
     font-family: Ailerons;
@@ -103,8 +103,14 @@ a.navbar-brand-override:hover {
     display: inline-block;
     margin: 9px;
     font-size: 2em;
-    /* font-weight: bold; */
 }
+
+/* .footer-logo {
+    color: #de1717;
+    display: inline-block;
+
+    font-size: 30pt;
+} */
 
 .footer-logo {
     color: #de1717;
@@ -112,13 +118,6 @@ a.navbar-brand-override:hover {
     margin-left: 12px;
     margin-top: 6px;
     font-size: 30pt;
-}
-
-.footer-logo {
-    color: #de1717;
-    display: inline-block;
-    margin: 0.01em;
-    font-size: 3em;
     font-family: Ailerons;
 }
 
@@ -160,7 +159,7 @@ a.navbar-brand-override:hover {
     }
     #footerlink_logo {
         text-align: center;
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     .main_logo {
         display: none;
@@ -196,11 +195,11 @@ a.navbar-brand-override:hover {
 }
 
 .about-title {
-    font-size: 60pt;
+    font-size: 50pt;
     text-transform: uppercase;
     color: #de1717;
     padding-top: 15px;
-    margin-left: 20px;
+    margin-left: 25px;
     line-height: 60pt;
     margin-top: 100px;
     -ms-transform: skewX(-8deg);
@@ -214,7 +213,7 @@ a.navbar-brand-override:hover {
 
 .about-desc {
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
     width: 400px;
     font-family: AUDIMSCL;
     font-variant: small-caps;
@@ -255,28 +254,30 @@ a.navbar-brand-override:hover {
 }
 
 .staff-row {
-    margin-top: 2em;
+    margin-top: 0px;
     margin-left: 0.5em;
     text-align: center;
-    margin-bottom: 4em;
+    margin-bottom: 30px;
 }
 
-.staff-row h2,
-h4 {
+.staff-row h2 {
+  font-family: Ailerons;
+}
+
+.staff-row h2, h4 {
     color: #de1717;
     line-height: 18pt;
 }
 
 .staff-row h4 {
     font-family: AUDIMSCL;
-    text-transform: uppercase;
 }
 
 .staff-row p {
     font-family: AUDIMSCL;
-    font-variant: small-caps;
-    font-size: 18pt;
-    line-height: 18pt;
+    font-weight: normal;
+    font-size: 13.5pt;
+    line-height: 16pt;
 }
 
 
@@ -418,7 +419,6 @@ h4 {
     }
 }
 
-
 /*MEDIA QUERIES FOR ABOUT US PAGE END*/
 
 
@@ -450,41 +450,7 @@ h4 {
     }
 }
 
-
 /*MEDIA QUERIES FOR SERVICES PAGE END*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* STYLES FOR CONTACT-US BEGIN */
 
@@ -492,7 +458,15 @@ h4 {
     filter: drop-shadow(0 2px 3px black);
 }
 
-#services-background.visible-lg.visible-md {
+#services-background.visible-lg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 140vh;
+}
+
+#services-background.visible-md {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -517,17 +491,18 @@ h4 {
 }
 
 #map {
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     /* float: right; */
-    margin-bottom: 60px;
+    /* margin-top: -90px; */
+    margin-bottom: 50px;
 }
 
 #main-contact-content {
     padding-top: 30px;
 }
 
-#services-background {
+#contact-background {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -537,8 +512,9 @@ h4 {
 
 #contact-header {
     margin-top: 30px;
+    padding-bottom: 10px;
     color: #eee;
-    font-size: 17pt;
+    font-size: 18pt;
 }
 
 .radio-group>label {
@@ -600,12 +576,10 @@ h4 {
     .haiL p {
         text-align: right;
         padding-right: 0px;
-        white-space: pre;
         /* margin-top: 15px; */
     }
     .haiR p {
         text-align: left;
-        white-space: pre;
         /* margin-top: 15px; */
     }
     #map {
@@ -614,7 +588,10 @@ h4 {
         /* float: right; */
     }
     .social-icons {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    #contact-header {
+        font-size: 14pt;
     }
 }
 
@@ -630,12 +607,10 @@ h4 {
     .haiL p {
         text-align: right;
         padding-right: 0px;
-        white-space: pre;
         /* margin-top: 15px; */
     }
     .haiR p {
         text-align: left;
-        white-space: pre;
         /* margin-top: 15px; */
     }
     .social-icons {
@@ -659,8 +634,8 @@ h4 {
         transform: translate(-5%, 65%);
     }
     .social-icons img {
-        width: 85%;
-        max-width: 80px;
+        width: 100%;
+        max-width: 60px;
     }
     #storefront {
         width: 90%!important;
@@ -751,5 +726,271 @@ textarea {
     font-weight: bold;
 }
 
-
 /* STYLES FOR CONTACT-US END */
+
+
+/* STYLES FOR INDEX/HOMEPAGE BEGIN */
+/* Small devices (tablets, 768px and below) */
+
+@media (max-width: 768px) {
+    #index .main_logo {
+        display: none;
+    }
+    #blurb {
+        position: absolute;
+        padding-top: 30pt;
+        color: #eee;
+    }
+    #blurb h1 {
+        color: #0e0e0e;
+        font-size: 20pt;
+        font-weight: normal;
+    }
+    .blurb-socials img {
+        max-height: 30px;
+        margin-bottom: 20px;
+    }
+    #subblurb {
+        font-size: 12pt;
+    }
+    .blurbdesc {
+        font-size: 8pt;
+        color: #eee;
+        text-align: right;
+        margin-top: 5px;
+        padding-right: 30px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+    }
+}
+
+/* Medium devices (tablet, 768px and up) */
+
+@media (min-width: 768px) {
+    #index .navbar-brand-override {
+        display: none;
+    }
+    #index .main_logo {
+        position: absolute;
+        z-index: 100;
+        font-size: 26pt;
+        display: inline-block;
+        line-height: 30pt;
+    }
+    #index .filter {
+        filter: drop-shadow(0 4px 4px black);
+    }
+    #blurb {
+        position: absolute;
+        padding-top: 70pt;
+        color: #eee;
+    }
+    #blurb h1 {
+        color: #0e0e0e;
+        font-size: 48pt;
+        font-weight: normal;
+    }
+    .blurb-socials {
+        margin-bottom: 30px;
+    }
+    .blurb-socials img {
+        max-height: 60px;
+    }
+    #subblurb {
+        font-size: 21.25pt;
+    }
+    .blurbdesc {
+        font-size: 14pt;
+        color: #eee;
+        text-align: right;
+        margin-top: 5px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    #index .navbar-brand-override {
+        display: none;
+    }
+    #index .main_logo {
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 43pt;
+        line-height: 43pt;
+    }
+    #testimonial-2 {
+        transform: translateY(75%);
+    }
+    .youtube-video {
+        width: 100%;
+        height: 240px;
+        border: none;
+    }
+    #blurb {
+        position: absolute;
+        padding-top: 100pt;
+        color: #eee;
+    }
+    #blurb h1 {
+        color: #0e0e0e;
+        font-size: 33pt;
+        font-weight: normal;
+    }
+    .blurb-socials {
+        margin-top: 30px;
+    }
+    #subblurb {
+        font-size: 21.25pt;
+    }
+    .blurbdesc {
+        font-size: 14pt;
+        color: #eee;
+        padding-right: 0px;
+    }
+}
+
+/* TODO add a media query for blurb in greater than ipad pro (1025px) */
+
+@media (width: 1024px) {
+    #index .navbar-brand-override {
+        display: none;
+    }
+    #index .main_logo {
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 40pt;
+        line-height: 40pt;
+    }
+    #testimonial-2 {
+        transform: translateY(75%);
+    }
+    .youtube-video {
+        width: 100%;
+        height: 240px;
+        border: none;
+    }
+    #blurb {
+        position: absolute;
+        padding-top: 80pt;
+        color: #eee;
+    }
+    #blurb h1 {
+        color: #0e0e0e;
+        font-size: 43pt;
+        font-weight: normal;
+    }
+    .blurb-socials {
+        margin-top: 30px;
+    }
+    #subblurb {
+        font-size: 21.25pt;
+    }
+    .blurbdesc {
+        font-size: 14pt;
+        color: #eee;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #index .navbar-brand-override {
+        display: none;
+    }
+    #index .main_logo {
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 43pt;
+        line-height: 43pt;
+    }
+    #testimonial-2 {
+        transform: translateY(75%);
+    }
+    .youtube-video {
+        width: 100%;
+        height: 240px;
+        border: none;
+    }
+    #blurb {
+        position: absolute;
+        padding-top: 120pt;
+        color: #eee;
+    }
+    #blurb h1 {
+        color: #0e0e0e;
+        font-size: 56pt;
+        font-weight: normal;
+    }
+    .blurb-socials {
+        margin-top: 30px;
+    }
+    #subblurb {
+        font-size: 21.25pt;
+    }
+    .blurbdesc {
+        font-size: 14pt;
+        color: #eee;
+        padding-right: 0px;
+    }
+}
+
+.blurb-socials {
+  z-index: 100;
+}
+
+#index-background {
+    width: 100%;
+    max-height: 56vw;
+    position: absolute;
+    z-index: -3;
+}
+
+#testimonial-section {
+    background-color: black;
+    color: #eee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#testimonial-section a:link {
+    color: white;
+}
+
+#testimonial-section a:visited {
+    color: white;
+}
+
+#testimonial-1 {
+    margin-bottom: 30px;
+}
+
+#testimonial-2 {
+    text-align: right;
+}
+
+#testimonial-3 {
+    margin-top: 30px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+
+.youtube-video {
+    width: 100%;
+    height: 240px;
+    border: none;
+}
+/* STYLES FOR INDEX/HOMEPAGE END */
